@@ -17,7 +17,7 @@
 %PDF Info Is REQUIRED.
 % For /Author, add all authors within the parentheses, separated by commas. No accents or commands.
 % For /Title, add Title in Mixed Case. No accents or commands. Retain the parentheses.
- \pdfinfo{
+\pdfinfo{
 /Title (PerConfigure: Periodically Configure the Video Pipeline Based on a Reinforcement Learning approach)
 /Author (Zhaoliang He, Chen Tang, Zhi Wang)
 %Zhaoliang He, Chen Tang, Zhi Wang
@@ -99,7 +99,7 @@
 %publications20@aaai.org % email address must be in roman text type, not monospace or sans serif
 %}
 \begin{document}
-
+\bibliographystyle{aaai}
 \maketitle
 
 \input{sections/abstract.tex}
@@ -113,9 +113,12 @@
 \item You must submit your electronic files and abstract using our electronic submission form \textbf{on time.}
 \item You must pay any required page or formatting charges to AAAI Press so that they are received by the deadline.
 \item You must check your paper before submitting it, ensuring that it compiles without error, and complies with the guidelines found in the AAAI Author Kit.
+
 \end{itemize}
 
 \input{sections/introduction.tex}
+
+
 \input{sections/relatedwork.tex}
 
 %\section{Copyright}
@@ -574,71 +577,6 @@
 %\subsubsection{Fonts in Your Illustrations}
 %You must embed all fonts in your graphics before including them in your LaTeX document.
 %
-\subsection{References} 
-The AAAI style includes a set of definitions for use in formatting references with BibTeX. These definitions make the bibliography style fairly close to the one specified below. To use these definitions, you also need the BibTeX style file ``aaai.bst," available in the AAAI Author Kit on the AAAI web site. Then, at the end of your paper but before \textbackslash end{document}, you need to put the following lines:
-
-\begin{quote}
-\begin{small}
-\textbackslash bibliographystyle\{aaai\}
-\textbackslash bibliography\{bibfile1,bibfile2,...\}
-\end{small}
-\end{quote}
-
-Please note that you are required to use \textbackslash bibliographystyle\{aaai\} for your references. You may not use named, plain, apalike, acm, ieeetr, siam, chicago, or any other style. Use of natbib is also not acceptable. (In addition to natbib, the aaai20.sty file is also incompatible with the hyperref and navigator packages. If you use either, your references will be garbled and your paper will be returned to you.) If you used natbib commands, an imprecise workaround is available (although it does not always work). You may put the following in your preamble (after removing \textbackslash usepackage\{natbib\}
-
-\begin{quote}\small
-\textbackslash newcommand\{\textbackslash citet\}[1]\{\textbackslash citeauthor\{\#1\}~\textbackslash shortcite\{\#1\}\}
-\textbackslash newcommand\{\textbackslash citep\}\{\textbackslash cite\}
-\textbackslash newcommand\{\textbackslash citealp\}[1]\{\textbackslash citeauthor\{\#1\}~\textbackslash citeyear\{\#1\}\}
-\end{quote}
-
-
-References may be the same size as surrounding text. However, in this section (only), you may reduce the size to \textbackslash small if your paper exceeds the allowable number of pages. Making it any smaller than 9 point with 10 point linespacing, however, is not allowed. A more precise and exact method of reducing the size of your references minimally is by means of the following command: \begin{quote}
-\textbackslash fontsize\{9.8pt\}\{10.8pt\}
-\textbackslash selectfont\end{quote}
-
-\noindent You must reduce the size equally for both font size and line spacing, and may not reduce the size beyond \{9.0pt\}\{10.0pt\}.
-
-The list of files in the \textbackslash bibliography command should be the names of your BibTeX source files (that is, the .bib files referenced in your paper).
-
-The following commands are available for your use in citing references:
-\begin{quote}
-{\em \textbackslash cite:} Cites the given reference(s) with a full citation. This appears as ``(Author Year)'' for one reference, or ``(Author Year; Author Year)'' for multiple references.\smallskip\\
-{\em \textbackslash shortcite:} Cites the given reference(s) with just the year. This appears as ``(Year)'' for one reference, or ``(Year; Year)'' for multiple references.\smallskip\\
-{\em \textbackslash citeauthor:} Cites the given reference(s) with just the author name(s) and no parentheses.\smallskip\\
-{\em \textbackslash citeyear:} Cites the given reference(s) with just the date(s) and no parentheses.
-\end{quote}
-
-\cite{}
-
-Formatted bibliographies should look like the following examples.
-
-\smallskip \noindent \textit{Book with Multiple Authors}\\
-Engelmore, R., and Morgan, A. eds. 1986. \textit{Blackboard Systems.} Reading, Mass.: Addison-Wesley.
-
-\smallskip \noindent \textit{Journal Article}\\
-Robinson, A. L. 1980a. New Ways to Make Microcircuits Smaller. \textit{Science} 208: 1019--1026.
-
-\smallskip \noindent \textit{Magazine Article}\\
-Hasling, D. W.; Clancey, W. J.; and Rennels, G. R. 1983. Strategic Explanations in Consultation. \textit{The International Journal of Man-Machine Studies} 20(1): 3--19.
-
-\smallskip \noindent \textit{Proceedings Paper Published by a Society}\\
-Clancey, W. J. 1983. Communication, Simulation, and Intelligent Agents: Implications of Personal Intelligent Machines for Medical Education. In \textit{Proceedings of the Eighth International Joint Conference on Artificial Intelligence,} 556--560. Menlo Park, Calif.: International Joint Conferences on Artificial Intelligence, Inc.
-
-\smallskip \noindent \textit{Proceedings Paper Published by a Press or Publisher}\\
-Clancey, W. J. 1984. Classification Problem Solving. In \textit{Proceedings of the Fourth National Conference on Artificial Intelligence,} 49--54. Menlo Park, Calif.: AAAI Press. 
-
-\smallskip \noindent \textit{University Technical Report}\\
-Rice, J. 1986. Poligon: A System for Parallel Problem Solving, Technical Report, KSL-86-19, Dept. of Computer Science, Stanford Univ. 
-
-\smallskip \noindent \textit{Dissertation or Thesis}\\
-Clancey, W. J. 1979. Transfer of Rule-Based Expertise through a Tutorial Dialogue. Ph.D. diss., Dept. of Computer Science, Stanford Univ., Stanford, Calif.
-
-\smallskip \noindent \textit{Forthcoming Publication}\\
-Clancey, W. J. 2021. The Engineering of Qualitative Models. Forthcoming.
-
-For the most up to date version of the AAAI reference style, please consult the \textit{AI Magazine} Author Guidelines at \url{https://aaai.org/ojs/index.php/aimagazine/about/submissions#authorGuidelines}
-
 
 
 %\section{Proofreading Your PDF}
@@ -671,11 +609,12 @@ For the most up to date version of the AAAI reference style, please consult the 
 %\LaTeX{} is a difficult program to master. If you've used that software, and this document didn't help or some items were not explained clearly, we recommend you read Michael Shell's excellent document (testflow doc.txt V1.0a 2002/08/13) about obtaining correct PS/PDF output on \LaTeX{} systems. (It was written for another purpose, but it has general application as well). It is available at www.ctan.org in the tex-archive.
 
 \section{Acknowledgments}
-AAAI is especially grateful to Peter Patel Schneider for his work in implementing the aaai.sty file, liberally using the ideas of other style hackers, including Barbara Beeton. We also acknowledge with thanks the work of George Ferguson for his guide to using the style and BibTeX files --- which has been incorporated into this document --- and Hans Guesgen, who provided several timely modifications, as well as the many others who have, from time to time, sent in suggestions on improvements to the AAAI style. 
+AAAI is especially grateful to Peter Patel Schneiderfor his work in implementing the aaai.sty file, liberally using the ideas of other style hackers, including Barbara Beeton. We also acknowledge with thanks the work of George Ferguson for his guide to using the style and BibTeX files --- which has been incorporated into this document --- and Hans Guesgen, who provided several timely modifications, as well as the many others who have, from time to time, sent in suggestions on improvements to the AAAI style. 
 
 The preparation of the \LaTeX{} and Bib\TeX{} files that implement these instructions was supported by Schlumberger Palo Alto Research, AT\&T Bell Laboratories, Morgan Kaufmann Publishers, The Live Oak Press, LLC, and AAAI Press. Bibliography style changes were added by Sunil Issar. \verb+\+pubnote was added by J. Scott Penberthy. George Ferguson added support for printing the AAAI copyright slug. Additional changes to aaai.sty and aaai.bst have been made by the AAAI staff.
 
 \bigskip
 \noindent Thank you for reading these instructions carefully. We look forward to receiving your electronic files!
 
+\bibliography{ref}
 \end{document}
