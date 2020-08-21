@@ -1,0 +1,87 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Han \bgroup et al\mbox.\egroup
+  }{2016}]{han2016mcdnn}
+Han, S.; Shen, H.; Philipose, M.; Agarwal, S.; Wolman, A.; and Krishnamurthy,
+  A.
+\newblock 2016.
+\newblock Mcdnn: An approximation-based execution framework for deep stream
+  processing under resource constraints.
+\newblock In {\em Proceedings of the 14th Annual International Conference on
+  Mobile Systems, Applications, and Services},  123--136.
+
+\bibitem[\protect\citeauthoryear{Hsieh \bgroup et al\mbox.\egroup
+  }{2018}]{hsieh2018focus}
+Hsieh, K.; Ananthanarayanan, G.; Bodik, P.; Venkataraman, S.; Bahl, P.;
+  Philipose, M.; Gibbons, P.~B.; and Mutlu, O.
+\newblock 2018.
+\newblock Focus: Querying large video datasets with low latency and low cost.
+\newblock In {\em 13th $\{$USENIX$\}$ Symposium on Operating Systems Design and
+  Implementation ($\{$OSDI$\}$ 18)},  269--286.
+
+\bibitem[\protect\citeauthoryear{Hung \bgroup et al\mbox.\egroup
+  }{2018}]{hung2018videoedge}
+Hung, C.-C.; Ananthanarayanan, G.; Bodik, P.; Golubchik, L.; Yu, M.; Bahl, P.;
+  and Philipose, M.
+\newblock 2018.
+\newblock Videoedge: Processing camera streams using hierarchical clusters.
+\newblock In {\em 2018 IEEE/ACM Symposium on Edge Computing (SEC)},  115--131.
+\newblock IEEE.
+
+\bibitem[\protect\citeauthoryear{Jiang \bgroup et al\mbox.\egroup
+  }{2018}]{jiang2018chameleon}
+Jiang, J.; Ananthanarayanan, G.; Bodik, P.; Sen, S.; and Stoica, I.
+\newblock 2018.
+\newblock Chameleon: scalable adaptation of video analytics.
+\newblock In {\em Proceedings of the 2018 Conference of the ACM Special
+  Interest Group on Data Communication},  253--266.
+
+\bibitem[\protect\citeauthoryear{Mnih \bgroup et al\mbox.\egroup
+  }{2016}]{mnih2016asynchronous}
+Mnih, V.; Badia, A.~P.; Mirza, M.; Graves, A.; Lillicrap, T.; Harley, T.;
+  Silver, D.; and Kavukcuoglu, K.
+\newblock 2016.
+\newblock Asynchronous methods for deep reinforcement learning.
+\newblock In {\em International conference on machine learning},  1928--1937.
+
+\bibitem[\protect\citeauthoryear{Romero \bgroup et al\mbox.\egroup
+  }{2019}]{romero2019infaas}
+Romero, F.; Li, Q.; Yadwadkar, N.~J.; and Kozyrakis, C.
+\newblock 2019.
+\newblock Infaas: A model-less inference serving system.
+\newblock {\em arXiv preprint arXiv:1905.13348}.
+
+\bibitem[\protect\citeauthoryear{Shen \bgroup et al\mbox.\egroup
+  }{2017}]{shen2017retrain_model}
+Shen, H.; Han, S.; Philipose, M.; and Krishnamurthy, A.
+\newblock 2017.
+\newblock Fast video classification via adaptive cascading of deep models.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition},  3646--3654.
+
+\bibitem[\protect\citeauthoryear{Wang \bgroup et al\mbox.\egroup
+  }{2020}]{wang2020jcab}
+Wang, C.; Zhang, S.; Chen, Y.; Qian, Z.; Wu, J.; and Xiao, M.
+\newblock 2020.
+\newblock Joint configuration adaptation and bandwidth allocation for
+  edge-based real-time video analytics.
+\newblock In {\em Proc. IEEE INFOCOM},  1--10.
+
+\bibitem[\protect\citeauthoryear{Yang \bgroup et al\mbox.\egroup
+  }{2019}]{yang2019edge_coordinated}
+Yang, P.; Lyu, F.; Wu, W.; Zhang, N.; Yu, L.; and Shen, X.~S.
+\newblock 2019.
+\newblock Edge coordinated query configuration for low-latency and accurate
+  video analytics.
+\newblock {\em IEEE Transactions on Industrial Informatics} 16(7):4855--4864.
+
+\bibitem[\protect\citeauthoryear{Zhang \bgroup et al\mbox.\egroup
+  }{2017}]{zhang2017videostorm}
+Zhang, H.; Ananthanarayanan, G.; Bodik, P.; Philipose, M.; Bahl, P.; and
+  Freedman, M.~J.
+\newblock 2017.
+\newblock Live video analytics at scale with approximation and delay-tolerance.
+\newblock In {\em 14th $\{$USENIX$\}$ Symposium on Networked Systems Design and
+  Implementation ($\{$NSDI$\}$ 17)},  377--392.
+
+\end{thebibliography}

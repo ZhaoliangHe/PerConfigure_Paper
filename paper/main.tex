@@ -13,6 +13,30 @@
 \frenchspacing  % DO NOT CHANGE THIS
 \setlength{\pdfpagewidth}{8.5in}  % DO NOT CHANGE THIS
 \setlength{\pdfpageheight}{11in}  % DO NOT CHANGE THIS
+
+\usepackage{balance}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usetikzlibrary{arrows, automata, shapes,snakes}
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage[labelfont=bf,textfont=bf]{caption}
+\captionsetup[figure]{labelfont={bf},name={Figure}}
+%\captionsetup[figure]{labelfont={bf},name={Figure},labelsep=period}
+%\usepackage[font=normalsize,labelfont=bf]{caption}
+%\usepackage[justification=centering]{caption}
+\usepackage{color}
+%\usepackage{ulem} 
+\usepackage{amssymb}
+
+\definecolor{note}{rgb}{0,0,1} %blue
+%\definecolor{revise}{rgb}{0,0,0} %black
+
 %\nocopyright
 %PDF Info Is REQUIRED.
 % For /Author, add all authors within the parentheses, separated by commas. No accents or commands.
@@ -104,22 +128,23 @@
 
 \input{sections/abstract.tex}
 
-\noindent Congratulations on having a paper selected for inclusion in an AAAI Press proceedings or technical report! This document details the requirements necessary to get your accepted paper published using PDF\LaTeX{}. If you are using Microsoft Word, instructions are provided in a different document. AAAI Press does not support any other formatting software. 
+%\noindent Congratulations on having a paper selected for inclusion in an AAAI Press proceedings or technical report! This document details the requirements necessary to get your accepted paper published using PDF\LaTeX{}. If you are using Microsoft Word, instructions are provided in a different document. AAAI Press does not support any other formatting software. 
+%
+%\begin{itemize}
+%\item You must use the 2020 AAAI Press \LaTeX{} style file and the aaai.bst bibliography style file, which are located in the 2020 AAAI Author Kit (aaai20.sty and aaai.bst).
+%\item You must complete, sign, and return by the deadline the AAAI copyright form (unless directed by AAAI Press to use the AAAI Distribution License instead).
+%\item You must read and format your paper source and PDF according to the formatting instructions for authors.
+%\item You must submit your electronic files and abstract using our electronic submission form \textbf{on time.}
+%\item You must pay any required page or formatting charges to AAAI Press so that they are received by the deadline.
+%\item You must check your paper before submitting it, ensuring that it compiles without error, and complies with the guidelines found in the AAAI Author Kit.
 
-\begin{itemize}
-\item You must use the 2020 AAAI Press \LaTeX{} style file and the aaai.bst bibliography style file, which are located in the 2020 AAAI Author Kit (aaai20.sty and aaai.bst).
-\item You must complete, sign, and return by the deadline the AAAI copyright form (unless directed by AAAI Press to use the AAAI Distribution License instead).
-\item You must read and format your paper source and PDF according to the formatting instructions for authors.
-\item You must submit your electronic files and abstract using our electronic submission form \textbf{on time.}
-\item You must pay any required page or formatting charges to AAAI Press so that they are received by the deadline.
-\item You must check your paper before submitting it, ensuring that it compiles without error, and complies with the guidelines found in the AAAI Author Kit.
-
-\end{itemize}
+%\end{itemize}
 
 \input{sections/introduction.tex}
-
-
 \input{sections/relatedwork.tex}
+\input{sections/design}
+\input{sections/evaluation.tex}
+\input{sections/conclusion.tex}
 
 %\section{Copyright}
 %All papers submitted for publication by AAAI Press must be accompanied by a valid signed copyright form. There are no exceptions to this requirement. You must send us the original version of this form. However, to meet the deadline, you may fax (1-650-321-4457) or scan and e-mail the form (pubforms20@aaai.org) to AAAI by the submission deadline, and then mail the original via postal mail to the AAAI office. If you fail to send in a signed copyright or permission form, we will be unable to publish your paper. There are \textbf{no exceptions} to this policy.You will find PDF versions of the AAAI copyright and permission to distribute forms in the AAAI AuthorKit.
@@ -609,12 +634,12 @@
 %\LaTeX{} is a difficult program to master. If you've used that software, and this document didn't help or some items were not explained clearly, we recommend you read Michael Shell's excellent document (testflow doc.txt V1.0a 2002/08/13) about obtaining correct PS/PDF output on \LaTeX{} systems. (It was written for another purpose, but it has general application as well). It is available at www.ctan.org in the tex-archive.
 
 \section{Acknowledgments}
-AAAI is especially grateful to Peter Patel Schneiderfor his work in implementing the aaai.sty file, liberally using the ideas of other style hackers, including Barbara Beeton. We also acknowledge with thanks the work of George Ferguson for his guide to using the style and BibTeX files --- which has been incorporated into this document --- and Hans Guesgen, who provided several timely modifications, as well as the many others who have, from time to time, sent in suggestions on improvements to the AAAI style. 
-
-The preparation of the \LaTeX{} and Bib\TeX{} files that implement these instructions was supported by Schlumberger Palo Alto Research, AT\&T Bell Laboratories, Morgan Kaufmann Publishers, The Live Oak Press, LLC, and AAAI Press. Bibliography style changes were added by Sunil Issar. \verb+\+pubnote was added by J. Scott Penberthy. George Ferguson added support for printing the AAAI copyright slug. Additional changes to aaai.sty and aaai.bst have been made by the AAAI staff.
-
-\bigskip
-\noindent Thank you for reading these instructions carefully. We look forward to receiving your electronic files!
+%AAAI is especially grateful to Peter Patel Schneiderfor his work in implementing the aaai.sty file, liberally using the ideas of other style hackers, including Barbara Beeton. We also acknowledge with thanks the work of George Ferguson for his guide to using the style and BibTeX files --- which has been incorporated into this document --- and Hans Guesgen, who provided several timely modifications, as well as the many others who have, from time to time, sent in suggestions on improvements to the AAAI style. 
+%
+%The preparation of the \LaTeX{} and Bib\TeX{} files that implement these instructions was supported by Schlumberger Palo Alto Research, AT\&T Bell Laboratories, Morgan Kaufmann Publishers, The Live Oak Press, LLC, and AAAI Press. Bibliography style changes were added by Sunil Issar. \verb+\+pubnote was added by J. Scott Penberthy. George Ferguson added support for printing the AAAI copyright slug. Additional changes to aaai.sty and aaai.bst have been made by the AAAI staff.
+%
+%\bigskip
+%\noindent Thank you for reading these instructions carefully. We look forward to receiving your electronic files!
 
 \bibliography{ref}
 \end{document}
