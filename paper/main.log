@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.4.2)  21 AUG 2020 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.4.2)  4 SEP 2020 18:00
 entering extended mode
 **./main.tex
 (main.tex
@@ -643,47 +643,54 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 )
 (sections/introduction.tex
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
+
+Underfull \vbox (badness 2478) has occurred while \output is active []
+
  [1{C:/Users/Joseph/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
-]) (sections/relatedwork.tex
+])
+(sections/relatedwork.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 
-Underfull \hbox (badness 1565) in paragraph at lines 5--7
+Underfull \hbox (badness 1565) in paragraph at lines 6--7
 \OT1/ptm/m/n/10 knobs or train-ing spe-cial-ized NN mod-els. VideoStorm
  []
 
-) (sections/design.tex) (sections/evaluation.tex
+[2]) (sections/design.tex) (sections/evaluation.tex
 Overfull \hbox (13.54654pt too wide) in paragraph at lines 35--49
  [][] 
  []
 
-) (sections/conclusion.tex) (main.bbl [2])
+) (sections/conclusion.tex) (main.bbl
+Underfull \vbox (badness 1571) has occurred while \output is active []
+
+ [3])
 
 Package caption Warning: Unused \captionsetup[figure] on input line 29.
 See the caption package documentation for explanation.
 
-[3
+[4
 
 ] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 17152 strings out of 492484
- 365392 string characters out of 3137349
- 426694 words of memory out of 3000000
- 21102 multiletter control sequences out of 15000+200000
- 26807 words of font info for 63 fonts, out of 3000000 for 9000
+ 17168 strings out of 492484
+ 365670 string characters out of 3137349
+ 427983 words of memory out of 3000000
+ 21117 multiletter control sequences out of 15000+200000
+ 28491 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,14n,80p,1019b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,14n,80p,1359b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
 {F:/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<F:/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy9.pfb><F:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><F:/MiKTeX 2.9/font
 s/type1/urw/times/utmr8a.pfb><F:/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 81575 bytes).
+Output written on main.pdf (4 pages, 86896 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
+ 39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

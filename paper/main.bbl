@@ -1,5 +1,23 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Argerich, Cheng, and
+  F{\"u}rst}{2019}]{argerich2019orchestration}
+Argerich, M.~F.; Cheng, B.; and F{\"u}rst, J.
+\newblock 2019.
+\newblock Reinforcement learning based orchestration for elastic services.
+\newblock In {\em 2019 IEEE 5th World Forum on Internet of Things (WF-IoT)},
+  352--357.
+\newblock IEEE.
+
+\bibitem[\protect\citeauthoryear{Dai \bgroup et al\mbox.\egroup
+  }{2016}]{dai2016r_fcn}
+Dai, J.; Li, Y.; He, K.; and Sun, J.
+\newblock 2016.
+\newblock R-fcn: Object detection via region-based fully convolutional
+  networks.
+\newblock In {\em Advances in neural information processing systems},
+  379--387.
+
 \bibitem[\protect\citeauthoryear{Han \bgroup et al\mbox.\egroup
   }{2016}]{han2016mcdnn}
 Han, S.; Shen, H.; Philipose, M.; Agarwal, S.; Wolman, A.; and Krishnamurthy,
@@ -10,6 +28,23 @@ Han, S.; Shen, H.; Philipose, M.; Agarwal, S.; Wolman, A.; and Krishnamurthy,
 \newblock In {\em Proceedings of the 14th Annual International Conference on
   Mobile Systems, Applications, and Services},  123--136.
 
+\bibitem[\protect\citeauthoryear{He \bgroup et al\mbox.\egroup
+  }{2016}]{he2016resnet}
+He, K.; Zhang, X.; Ren, S.; and Sun, J.
+\newblock 2016.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition},  770--778.
+
+\bibitem[\protect\citeauthoryear{Howard \bgroup et al\mbox.\egroup
+  }{2017}]{howard2017mobilenets}
+Howard, A.~G.; Zhu, M.; Chen, B.; Kalenichenko, D.; Wang, W.; Weyand, T.;
+  Andreetto, M.; and Adam, H.
+\newblock 2017.
+\newblock Mobilenets: Efficient convolutional neural networks for mobile vision
+  applications.
+\newblock {\em arXiv preprint arXiv:1704.04861}.
+
 \bibitem[\protect\citeauthoryear{Hsieh \bgroup et al\mbox.\egroup
   }{2018}]{hsieh2018focus}
 Hsieh, K.; Ananthanarayanan, G.; Bodik, P.; Venkataraman, S.; Bahl, P.;
@@ -18,6 +53,15 @@ Hsieh, K.; Ananthanarayanan, G.; Bodik, P.; Venkataraman, S.; Bahl, P.;
 \newblock Focus: Querying large video datasets with low latency and low cost.
 \newblock In {\em 13th $\{$USENIX$\}$ Symposium on Operating Systems Design and
   Implementation ($\{$OSDI$\}$ 18)},  269--286.
+
+\bibitem[\protect\citeauthoryear{Huang \bgroup et al\mbox.\egroup
+  }{2017}]{huang2017speed_accuracy}
+Huang, J.; Rathod, V.; Sun, C.; Zhu, M.; Korattikara, A.; Fathi, A.; Fischer,
+  I.; Wojna, Z.; Song, Y.; Guadarrama, S.; et~al.
+\newblock 2017.
+\newblock Speed/accuracy trade-offs for modern convolutional object detectors.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition},  7310--7311.
 
 \bibitem[\protect\citeauthoryear{Hung \bgroup et al\mbox.\egroup
   }{2018}]{hung2018videoedge}
@@ -36,6 +80,15 @@ Jiang, J.; Ananthanarayanan, G.; Bodik, P.; Sen, S.; and Stoica, I.
 \newblock In {\em Proceedings of the 2018 Conference of the ACM Special
   Interest Group on Data Communication},  253--266.
 
+\bibitem[\protect\citeauthoryear{Liu \bgroup et al\mbox.\egroup
+  }{2016}]{liu2016ssd}
+Liu, W.; Anguelov, D.; Erhan, D.; Szegedy, C.; Reed, S.; Fu, C.-Y.; and Berg,
+  A.~C.
+\newblock 2016.
+\newblock Ssd: Single shot multibox detector.
+\newblock In {\em European conference on computer vision},  21--37.
+\newblock Springer.
+
 \bibitem[\protect\citeauthoryear{Mnih \bgroup et al\mbox.\egroup
   }{2016}]{mnih2016asynchronous}
 Mnih, V.; Badia, A.~P.; Mirza, M.; Graves, A.; Lillicrap, T.; Harley, T.;
@@ -43,6 +96,22 @@ Mnih, V.; Badia, A.~P.; Mirza, M.; Graves, A.; Lillicrap, T.; Harley, T.;
 \newblock 2016.
 \newblock Asynchronous methods for deep reinforcement learning.
 \newblock In {\em International conference on machine learning},  1928--1937.
+
+\bibitem[\protect\citeauthoryear{Redmon \bgroup et al\mbox.\egroup
+  }{2016}]{redmon2016yolo}
+Redmon, J.; Divvala, S.; Girshick, R.; and Farhadi, A.
+\newblock 2016.
+\newblock You only look once: Unified, real-time object detection.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition},  779--788.
+
+\bibitem[\protect\citeauthoryear{Ren \bgroup et al\mbox.\egroup
+  }{2015}]{ren2015faster_rcnn}
+Ren, S.; He, K.; Girshick, R.; and Sun, J.
+\newblock 2015.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks.
+\newblock In {\em Advances in neural information processing systems},  91--99.
 
 \bibitem[\protect\citeauthoryear{Romero \bgroup et al\mbox.\egroup
   }{2019}]{romero2019infaas}
@@ -58,6 +127,30 @@ Shen, H.; Han, S.; Philipose, M.; and Krishnamurthy, A.
 \newblock Fast video classification via adaptive cascading of deep models.
 \newblock In {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition},  3646--3654.
+
+\bibitem[\protect\citeauthoryear{Szegedy \bgroup et al\mbox.\egroup
+  }{2014}]{szegedy2014multibox}
+Szegedy, C.; Reed, S.; Erhan, D.; Anguelov, D.; and Ioffe, S.
+\newblock 2014.
+\newblock Scalable, high-quality object detection.
+\newblock {\em arXiv preprint arXiv:1412.1441}.
+
+\bibitem[\protect\citeauthoryear{Szegedy \bgroup et al\mbox.\egroup
+  }{2016}]{szegedy2016inception}
+Szegedy, C.; Ioffe, S.; Vanhoucke, V.; and Alemi, A.
+\newblock 2016.
+\newblock Inception-v4, inception-resnet and the impact of residual connections
+  on learning.
+\newblock {\em arXiv preprint arXiv:1602.07261}.
+
+\bibitem[\protect\citeauthoryear{Ullah and Babar}{2019}]{ullah2019quickadapt}
+Ullah, F., and Babar, M.~A.
+\newblock 2019.
+\newblock Quickadapt: Scalable adaptation for big data cyber security
+  analytics.
+\newblock In {\em 2019 24th International Conference on Engineering of Complex
+  Computer Systems (ICECCS)},  81--86.
+\newblock IEEE.
 
 \bibitem[\protect\citeauthoryear{Wang \bgroup et al\mbox.\egroup
   }{2020}]{wang2020jcab}
