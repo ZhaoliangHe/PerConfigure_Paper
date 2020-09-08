@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.4.2)  4 SEP 2020 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.4.2)  8 SEP 2020 23:39
 entering extended mode
 **./main.tex
 (main.tex
@@ -654,7 +654,7 @@ Underfull \vbox (badness 2478) has occurred while \output is active []
 ])
 (sections/relatedwork.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 
 Underfull \hbox (badness 1565) in paragraph at lines 6--7
 \OT1/ptm/m/n/10 knobs or train-ing spe-cial-ized NN mod-els. VideoStorm
@@ -665,10 +665,7 @@ Overfull \hbox (13.54654pt too wide) in paragraph at lines 35--49
  [][] 
  []
 
-) (sections/conclusion.tex) (main.bbl
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
- [3])
+) (sections/conclusion.tex) (main.bbl [3])
 
 Package caption Warning: Unused \captionsetup[figure] on input line 29.
 See the caption package documentation for explanation.
@@ -677,18 +674,18 @@ See the caption package documentation for explanation.
 
 ] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 17168 strings out of 492484
- 365670 string characters out of 3137349
+ 17167 strings out of 492484
+ 365661 string characters out of 3137349
  427983 words of memory out of 3000000
- 21117 multiletter control sequences out of 15000+200000
+ 21116 multiletter control sequences out of 15000+200000
  28491 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,14n,80p,1359b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,14n,80p,1568b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
 {F:/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<F:/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb><F:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy9.pfb><F:/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><F:/MiKTeX 2.9/font
 s/type1/urw/times/utmr8a.pfb><F:/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 86896 bytes).
+Output written on main.pdf (4 pages, 87273 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
