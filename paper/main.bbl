@@ -1,180 +1,146 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
 
-\bibitem[\protect\citeauthoryear{Argerich, Cheng, and
-  F{\"u}rst}{2019}]{argerich2019orchestration}
-Argerich, M.~F.; Cheng, B.; and F{\"u}rst, J.
-\newblock 2019.
-\newblock Reinforcement learning based orchestration for elastic services.
-\newblock In {\em 2019 IEEE 5th World Forum on Internet of Things (WF-IoT)},
-  352--357.
-\newblock IEEE.
+\bibitem{huang2017speed_accuracy}
+Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara,
+  Alireza Fathi, Ian Fischer, Zbigniew Wojna, Yang Song, Sergio Guadarrama,
+  et~al.,
+\newblock ``Speed/accuracy trade-offs for modern convolutional object
+  detectors,''
+\newblock in {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, 2017, pp. 7310--7311.
 
-\bibitem[\protect\citeauthoryear{Dai \bgroup et al\mbox.\egroup
-  }{2016}]{dai2016r_fcn}
-Dai, J.; Li, Y.; He, K.; and Sun, J.
-\newblock 2016.
-\newblock R-fcn: Object detection via region-based fully convolutional
-  networks.
-\newblock In {\em Advances in neural information processing systems},
+\bibitem{ren2015faster_rcnn}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun,
+\newblock ``Faster r-cnn: Towards real-time object detection with region
+  proposal networks,''
+\newblock in {\em Advances in neural information processing systems}, 2015, pp.
+  91--99.
+
+\bibitem{dai2016r_fcn}
+Jifeng Dai, Yi~Li, Kaiming He, and Jian Sun,
+\newblock ``R-fcn: Object detection via region-based fully convolutional
+  networks,''
+\newblock in {\em Advances in neural information processing systems}, 2016, pp.
   379--387.
 
-\bibitem[\protect\citeauthoryear{Han \bgroup et al\mbox.\egroup
-  }{2016}]{han2016mcdnn}
-Han, S.; Shen, H.; Philipose, M.; Agarwal, S.; Wolman, A.; and Krishnamurthy,
-  A.
-\newblock 2016.
-\newblock Mcdnn: An approximation-based execution framework for deep stream
-  processing under resource constraints.
-\newblock In {\em Proceedings of the 14th Annual International Conference on
-  Mobile Systems, Applications, and Services},  123--136.
+\bibitem{szegedy2014multibox}
+Christian Szegedy, Scott Reed, Dumitru Erhan, Dragomir Anguelov, and Sergey
+  Ioffe,
+\newblock ``Scalable, high-quality object detection,''
+\newblock {\em arXiv preprint arXiv:1412.1441}, 2014.
 
-\bibitem[\protect\citeauthoryear{He \bgroup et al\mbox.\egroup
-  }{2016}]{he2016resnet}
-He, K.; Zhang, X.; Ren, S.; and Sun, J.
-\newblock 2016.
-\newblock Deep residual learning for image recognition.
-\newblock In {\em Proceedings of the IEEE conference on computer vision and
-  pattern recognition},  770--778.
+\bibitem{liu2016ssd}
+Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed,
+  Cheng-Yang Fu, and Alexander~C Berg,
+\newblock ``Ssd: Single shot multibox detector,''
+\newblock in {\em European conference on computer vision}. Springer, 2016, pp.
+  21--37.
 
-\bibitem[\protect\citeauthoryear{Howard \bgroup et al\mbox.\egroup
-  }{2017}]{howard2017mobilenets}
-Howard, A.~G.; Zhu, M.; Chen, B.; Kalenichenko, D.; Wang, W.; Weyand, T.;
-  Andreetto, M.; and Adam, H.
-\newblock 2017.
-\newblock Mobilenets: Efficient convolutional neural networks for mobile vision
-  applications.
-\newblock {\em arXiv preprint arXiv:1704.04861}.
+\bibitem{redmon2016yolo}
+Joseph Redmon, Santosh Divvala, Ross Girshick, and Ali Farhadi,
+\newblock ``You only look once: Unified, real-time object detection,''
+\newblock in {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, 2016, pp. 779--788.
 
-\bibitem[\protect\citeauthoryear{Hsieh \bgroup et al\mbox.\egroup
-  }{2018}]{hsieh2018focus}
-Hsieh, K.; Ananthanarayanan, G.; Bodik, P.; Venkataraman, S.; Bahl, P.;
-  Philipose, M.; Gibbons, P.~B.; and Mutlu, O.
-\newblock 2018.
-\newblock Focus: Querying large video datasets with low latency and low cost.
-\newblock In {\em 13th $\{$USENIX$\}$ Symposium on Operating Systems Design and
-  Implementation ($\{$OSDI$\}$ 18)},  269--286.
+\bibitem{howard2017mobilenets}
+Andrew~G Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
+  Tobias Weyand, Marco Andreetto, and Hartwig Adam,
+\newblock ``Mobilenets: Efficient convolutional neural networks for mobile
+  vision applications,''
+\newblock {\em arXiv preprint arXiv:1704.04861}, 2017.
 
-\bibitem[\protect\citeauthoryear{Huang \bgroup et al\mbox.\egroup
-  }{2017}]{huang2017speed_accuracy}
-Huang, J.; Rathod, V.; Sun, C.; Zhu, M.; Korattikara, A.; Fathi, A.; Fischer,
-  I.; Wojna, Z.; Song, Y.; Guadarrama, S.; et~al.
-\newblock 2017.
-\newblock Speed/accuracy trade-offs for modern convolutional object detectors.
-\newblock In {\em Proceedings of the IEEE conference on computer vision and
-  pattern recognition},  7310--7311.
+\bibitem{he2016resnet}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun,
+\newblock ``Deep residual learning for image recognition,''
+\newblock in {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, 2016, pp. 770--778.
 
-\bibitem[\protect\citeauthoryear{Hung \bgroup et al\mbox.\egroup
-  }{2018}]{hung2018videoedge}
-Hung, C.-C.; Ananthanarayanan, G.; Bodik, P.; Golubchik, L.; Yu, M.; Bahl, P.;
-  and Philipose, M.
-\newblock 2018.
-\newblock Videoedge: Processing camera streams using hierarchical clusters.
-\newblock In {\em 2018 IEEE/ACM Symposium on Edge Computing (SEC)},  115--131.
-\newblock IEEE.
+\bibitem{szegedy2016inception}
+Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, and Alex Alemi,
+\newblock ``Inception-v4, inception-resnet and the impact of residual
+  connections on learning,''
+\newblock {\em arXiv preprint arXiv:1602.07261}, 2016.
 
-\bibitem[\protect\citeauthoryear{Jiang \bgroup et al\mbox.\egroup
-  }{2018}]{jiang2018chameleon}
-Jiang, J.; Ananthanarayanan, G.; Bodik, P.; Sen, S.; and Stoica, I.
-\newblock 2018.
-\newblock Chameleon: scalable adaptation of video analytics.
-\newblock In {\em Proceedings of the 2018 Conference of the ACM Special
-  Interest Group on Data Communication},  253--266.
+\bibitem{jiang2018chameleon}
+Junchen Jiang, Ganesh Ananthanarayanan, Peter Bodik, Siddhartha Sen, and Ion
+  Stoica,
+\newblock ``Chameleon: scalable adaptation of video analytics,''
+\newblock in {\em Proceedings of the 2018 Conference of the ACM Special
+  Interest Group on Data Communication}, 2018, pp. 253--266.
 
-\bibitem[\protect\citeauthoryear{Liu \bgroup et al\mbox.\egroup
-  }{2016}]{liu2016ssd}
-Liu, W.; Anguelov, D.; Erhan, D.; Szegedy, C.; Reed, S.; Fu, C.-Y.; and Berg,
-  A.~C.
-\newblock 2016.
-\newblock Ssd: Single shot multibox detector.
-\newblock In {\em European conference on computer vision},  21--37.
-\newblock Springer.
+\bibitem{mnih2016asynchronous}
+Volodymyr Mnih, Adria~Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy
+  Lillicrap, Tim Harley, David Silver, and Koray Kavukcuoglu,
+\newblock ``Asynchronous methods for deep reinforcement learning,''
+\newblock in {\em International conference on machine learning}, 2016, pp.
+  1928--1937.
 
-\bibitem[\protect\citeauthoryear{Mnih \bgroup et al\mbox.\egroup
-  }{2016}]{mnih2016asynchronous}
-Mnih, V.; Badia, A.~P.; Mirza, M.; Graves, A.; Lillicrap, T.; Harley, T.;
-  Silver, D.; and Kavukcuoglu, K.
-\newblock 2016.
-\newblock Asynchronous methods for deep reinforcement learning.
-\newblock In {\em International conference on machine learning},  1928--1937.
+\bibitem{zhang2017videostorm}
+Haoyu Zhang, Ganesh Ananthanarayanan, Peter Bodik, Matthai Philipose, Paramvir
+  Bahl, and Michael~J Freedman,
+\newblock ``Live video analytics at scale with approximation and
+  delay-tolerance,''
+\newblock in {\em 14th $\{$USENIX$\}$ Symposium on Networked Systems Design and
+  Implementation ($\{$NSDI$\}$ 17)}, 2017, pp. 377--392.
 
-\bibitem[\protect\citeauthoryear{Redmon \bgroup et al\mbox.\egroup
-  }{2016}]{redmon2016yolo}
-Redmon, J.; Divvala, S.; Girshick, R.; and Farhadi, A.
-\newblock 2016.
-\newblock You only look once: Unified, real-time object detection.
-\newblock In {\em Proceedings of the IEEE conference on computer vision and
-  pattern recognition},  779--788.
+\bibitem{hung2018videoedge}
+Chien-Chun Hung, Ganesh Ananthanarayanan, Peter Bodik, Leana Golubchik, Minlan
+  Yu, Paramvir Bahl, and Matthai Philipose,
+\newblock ``Videoedge: Processing camera streams using hierarchical clusters,''
+\newblock in {\em 2018 IEEE/ACM Symposium on Edge Computing (SEC)}. IEEE, 2018,
+  pp. 115--131.
 
-\bibitem[\protect\citeauthoryear{Ren \bgroup et al\mbox.\egroup
-  }{2015}]{ren2015faster_rcnn}
-Ren, S.; He, K.; Girshick, R.; and Sun, J.
-\newblock 2015.
-\newblock Faster r-cnn: Towards real-time object detection with region proposal
-  networks.
-\newblock In {\em Advances in neural information processing systems},  91--99.
+\bibitem{han2016mcdnn}
+Seungyeop Han, Haichen Shen, Matthai Philipose, Sharad Agarwal, Alec Wolman,
+  and Arvind Krishnamurthy,
+\newblock ``Mcdnn: An approximation-based execution framework for deep stream
+  processing under resource constraints,''
+\newblock in {\em Proceedings of the 14th Annual International Conference on
+  Mobile Systems, Applications, and Services}, 2016, pp. 123--136.
 
-\bibitem[\protect\citeauthoryear{Romero \bgroup et al\mbox.\egroup
-  }{2019}]{romero2019infaas}
-Romero, F.; Li, Q.; Yadwadkar, N.~J.; and Kozyrakis, C.
-\newblock 2019.
-\newblock Infaas: A model-less inference serving system.
-\newblock {\em arXiv preprint arXiv:1905.13348}.
+\bibitem{hsieh2018focus}
+Kevin Hsieh, Ganesh Ananthanarayanan, Peter Bodik, Shivaram Venkataraman,
+  Paramvir Bahl, Matthai Philipose, Phillip~B Gibbons, and Onur Mutlu,
+\newblock ``Focus: Querying large video datasets with low latency and low
+  cost,''
+\newblock in {\em 13th $\{$USENIX$\}$ Symposium on Operating Systems Design and
+  Implementation ($\{$OSDI$\}$ 18)}, 2018, pp. 269--286.
 
-\bibitem[\protect\citeauthoryear{Shen \bgroup et al\mbox.\egroup
-  }{2017}]{shen2017retrain_model}
-Shen, H.; Han, S.; Philipose, M.; and Krishnamurthy, A.
-\newblock 2017.
-\newblock Fast video classification via adaptive cascading of deep models.
-\newblock In {\em Proceedings of the IEEE conference on computer vision and
-  pattern recognition},  3646--3654.
+\bibitem{shen2017retrain_model}
+Haichen Shen, Seungyeop Han, Matthai Philipose, and Arvind Krishnamurthy,
+\newblock ``Fast video classification via adaptive cascading of deep models,''
+\newblock in {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, 2017, pp. 3646--3654.
 
-\bibitem[\protect\citeauthoryear{Szegedy \bgroup et al\mbox.\egroup
-  }{2014}]{szegedy2014multibox}
-Szegedy, C.; Reed, S.; Erhan, D.; Anguelov, D.; and Ioffe, S.
-\newblock 2014.
-\newblock Scalable, high-quality object detection.
-\newblock {\em arXiv preprint arXiv:1412.1441}.
+\bibitem{yang2019edge_coordinated}
+Peng Yang, Feng Lyu, Wen Wu, Ning Zhang, Li~Yu, and Xuemin~Sherman Shen,
+\newblock ``Edge coordinated query configuration for low-latency and accurate
+  video analytics,''
+\newblock {\em IEEE Transactions on Industrial Informatics}, vol. 16, no. 7,
+  pp. 4855--4864, 2019.
 
-\bibitem[\protect\citeauthoryear{Szegedy \bgroup et al\mbox.\egroup
-  }{2016}]{szegedy2016inception}
-Szegedy, C.; Ioffe, S.; Vanhoucke, V.; and Alemi, A.
-\newblock 2016.
-\newblock Inception-v4, inception-resnet and the impact of residual connections
-  on learning.
-\newblock {\em arXiv preprint arXiv:1602.07261}.
+\bibitem{romero2019infaas}
+Francisco Romero, Qian Li, Neeraja~J Yadwadkar, and Christos Kozyrakis,
+\newblock ``Infaas: A model-less inference serving system,''
+\newblock {\em arXiv preprint arXiv:1905.13348}, 2019.
 
-\bibitem[\protect\citeauthoryear{Ullah and Babar}{2019}]{ullah2019quickadapt}
-Ullah, F., and Babar, M.~A.
-\newblock 2019.
-\newblock Quickadapt: Scalable adaptation for big data cyber security
-  analytics.
-\newblock In {\em 2019 24th International Conference on Engineering of Complex
-  Computer Systems (ICECCS)},  81--86.
-\newblock IEEE.
+\bibitem{ullah2019quickadapt}
+Faheem Ullah and M~Ali Babar,
+\newblock ``Quickadapt: Scalable adaptation for big data cyber security
+  analytics,''
+\newblock in {\em 2019 24th International Conference on Engineering of Complex
+  Computer Systems (ICECCS)}. IEEE, 2019, pp. 81--86.
 
-\bibitem[\protect\citeauthoryear{Wang \bgroup et al\mbox.\egroup
-  }{2020}]{wang2020jcab}
-Wang, C.; Zhang, S.; Chen, Y.; Qian, Z.; Wu, J.; and Xiao, M.
-\newblock 2020.
-\newblock Joint configuration adaptation and bandwidth allocation for
-  edge-based real-time video analytics.
-\newblock In {\em Proc. IEEE INFOCOM},  1--10.
+\bibitem{wang2020jcab}
+Can Wang, Sheng Zhang, Yu~Chen, Zhuzhong Qian, Jie Wu, and Mingjun Xiao,
+\newblock ``Joint configuration adaptation and bandwidth allocation for
+  edge-based real-time video analytics,''
+\newblock in {\em Proc. IEEE INFOCOM}, 2020, pp. 1--10.
 
-\bibitem[\protect\citeauthoryear{Yang \bgroup et al\mbox.\egroup
-  }{2019}]{yang2019edge_coordinated}
-Yang, P.; Lyu, F.; Wu, W.; Zhang, N.; Yu, L.; and Shen, X.~S.
-\newblock 2019.
-\newblock Edge coordinated query configuration for low-latency and accurate
-  video analytics.
-\newblock {\em IEEE Transactions on Industrial Informatics} 16(7):4855--4864.
-
-\bibitem[\protect\citeauthoryear{Zhang \bgroup et al\mbox.\egroup
-  }{2017}]{zhang2017videostorm}
-Zhang, H.; Ananthanarayanan, G.; Bodik, P.; Philipose, M.; Bahl, P.; and
-  Freedman, M.~J.
-\newblock 2017.
-\newblock Live video analytics at scale with approximation and delay-tolerance.
-\newblock In {\em 14th $\{$USENIX$\}$ Symposium on Networked Systems Design and
-  Implementation ($\{$NSDI$\}$ 17)},  377--392.
+\bibitem{argerich2019orchestration}
+Mauricio~Fadel Argerich, Bin Cheng, and Jonathan F{\"u}rst,
+\newblock ``Reinforcement learning based orchestration for elastic services,''
+\newblock in {\em 2019 IEEE 5th World Forum on Internet of Things (WF-IoT)}.
+  IEEE, 2019, pp. 352--357.
 
 \end{thebibliography}
