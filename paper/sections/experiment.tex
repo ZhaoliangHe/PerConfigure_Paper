@@ -2,8 +2,8 @@
 \label{Section: experiment}
 
 \subsection{Experiment Setup}
-
-\subsection{some results}
+\textbf{Datasets:} Due to most of public sources datasets cannot fully satisfy all configuration choices, for example, some can only guarantee 30 frames but cannot guarantee 1024p resolution, while others can guarantee resolution but cannot provide sufficient frame rate, but in recent years, most of the driving recorder can provide enough resolution and frame rate, so we try to use Youtube video as fellows. First, in order to eliminate the bias caused by Cookies and personal preferences, we use private browsing mode to search keywords (e.g., "drivecam highway hd"). Second, manually delete irrelevant videos (e.g., ads for some driving recorders) and download videos that are longer than ten minutes(and keep only the first 10 minutes). In addition, these videos need to be as dynamic as the real world, such as not standing still for too long. Becaues of none of these videos contained ground truth, we used the data of the original video output from DNN as the tags to calculate the accuracy. For instance, in object detection, the accuracy is defined by the F1 score with respect to the server-side DNN output in highest resolution (original) with over 30$\%$ confidence score \textcolor{note}{this may need to be modified, chen tang}.
+\subsection{Some results}
 
 \begin{table}[!t]
 %\begin{table}[H]
