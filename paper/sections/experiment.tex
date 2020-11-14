@@ -2,51 +2,77 @@
 \label{Section: experiment}
 
 \subsection{Experiment Setup}
-\textbf{Datasets:} Due to most of public sources datasets cannot fully satisfy all configuration choices, for example, some can only guarantee 30 frames but cannot guarantee 1024p resolution, while others can guarantee resolution but cannot provide sufficient frame rate, but in recent years, most of the driving recorder can provide enough resolution and frame rate, so we try to use Youtube video as fellows. First, in order to eliminate the bias caused by Cookies and personal preferences, we use private browsing mode to search keywords (e.g., "drivecam highway hd"). Second, manually delete irrelevant videos (e.g., ads for some driving recorders) and download videos that are longer than ten minutes(and keep only the first 10 minutes). In addition, these videos need to be as dynamic as the real world, such as not standing still for too long. Becaues of none of these videos contained ground truth, we used the data of the original video output from DNN as the tags to calculate the accuracy. For instance, in object detection, the accuracy is defined by the F1 score with respect to the server-side DNN output in highest resolution (original) with over 30$\%$ confidence score \textcolor{note}{this may need to be modified, chen tang}.
+\textbf{Datasets:} Due to most of public sources datasets cannot fully satisfy all configuration choices, for example, some can only guarantee 30 frames but cannot guarantee 1024p resolution, while others can guarantee resolution but cannot provide sufficient frame rate, but in recent years, most of the driving recorder can provide enough resolution and frame rate, so we try to use Youtube video as fellows. First, in order to eliminate the bias caused by Cookies and personal preferences, we use private browsing mode to search keywords (e.g., "drivecam highway hd"). Second, manually delete irrelevant videos (e.g., ads for some driving recorders) and download videos that are longer than ten minutes. In addition, these videos need to be as dynamic as the real world, such as not standing still for too long. Becaues of none of these videos contained ground truth, we used the data of the original video output from DNN as the tags to calculate the accuracy. For instance, in object detection, the accuracy is defined by the F1 score with respect to the server-side DNN output in highest resolution (original) with over 50$\%$ confidence score \textcolor{note}{this may need to be modified, chen tang}.
 \subsection{Some results}
 
-\begin{table}[!t]
-%\begin{table}[H]
-	\centering
-	%     \begin{tabular}{lll}
-	\resizebox{0.5\textwidth}{!}{
-		\begin{tabular}{lcc}
-			\toprule
-			Model and Image size & Inference time & Accuracy  \\ \midrule
-			SSD MobileNetV2 320p          & 49.5 ms  &  xxx            \\
-			SSD MobileNetV2 640p          & 58.5 ms  &  0.494            \\
-			SSD ResNet152V1 640p          & 100 ms  &  0.579            \\
-			SSD ResNet152V1 1024p          & 182.3 ms  &  0.614            \\
-			FasterRCNN ResNet50V1 640p          & 106.4 ms  &  0.637            \\
-			FasterRCNN ResNet50V1 1024p          & 120.5 ms  &  0.786           \\
-			FasterRCNN InceptionResNetV2 640p          & 361.8 ms  &  0.734            \\
-			FasterRCNN InceptionResNetV2 1024p          & 418.4 ms  &  1            \\
-			\bottomrule
-	\end{tabular}}
-	\caption{Inference time and F1 for different models and resolutions car truck}
-	\label{tab: latency-overhead}
-	% \vspace{-0.5cm}
-\end{table}
+%\begin{table}[!t]
+%%\begin{table}[H]
+%	\centering
+%	%     \begin{tabular}{lll}
+%	\resizebox{0.5\textwidth}{!}{
+%		\begin{tabular}{lcc}
+%			\toprule
+%			Model and Image size & Inference time & Accuracy  \\ \midrule
+%			SSD MobileNetV2 320p          & 49.5 ms  &  xxx            \\
+%			SSD MobileNetV2 640p          & 58.5 ms  &  0.494            \\
+%			SSD ResNet152V1 640p          & 100 ms  &  0.579            \\
+%			SSD ResNet152V1 1024p          & 182.3 ms  &  0.614            \\
+%			FasterRCNN ResNet50V1 640p          & 106.4 ms  &  0.637            \\
+%			FasterRCNN ResNet50V1 1024p          & 120.5 ms  &  0.786           \\
+%			FasterRCNN InceptionResNetV2 640p          & 361.8 ms  &  0.734            \\
+%			FasterRCNN InceptionResNetV2 1024p          & 418.4 ms  &  1            \\
+%			\bottomrule
+%	\end{tabular}}
+%	\caption{Inference time and F1 for different models and resolutions car truck}
+%	\label{tab: latency-overhead}
+%	% \vspace{-0.5cm}
+%\end{table}
+%
+%\begin{table}[!t]
+%	%\begin{table}[H]
+%	\centering
+%	%     \begin{tabular}{lll}
+%	\resizebox{0.5\textwidth}{!}{
+%		\begin{tabular}{lcc}
+%			\toprule
+%			Model and Image size & Inference time & Accuracy  \\ \midrule
+%			SSD MobileNetV2 320p          & 49.5 ms  &  xxx            \\
+%			SSD MobileNetV2 640p          & 58.5 ms  &  0.753            \\
+%			SSD ResNet152V1 640p          & 100 ms  &  0.886            \\
+%			SSD ResNet152V1 1024p          & 182.3 ms  &  0.942            \\
+%			FasterRCNN ResNet50V1 640p          & 106.4 ms  &  0.889            \\
+%			FasterRCNN ResNet50V1 1024p          & 120.5 ms  &  0.98           \\
+%			FasterRCNN InceptionResNetV2 640p          & 361.8 ms  &  0.965            \\
+%			FasterRCNN InceptionResNetV2 1024p          & 418.4 ms  &  1            \\
+%			\bottomrule
+%	\end{tabular}}
+%	\caption{Inference time and F1 for different models and resolutions}
+%	\label{tab: latency-overhead}
+%	% \vspace{-0.5cm}
+%\end{table}
 
-\begin{table}[!t]
-	%\begin{table}[H]
-	\centering
-	%     \begin{tabular}{lll}
-	\resizebox{0.5\textwidth}{!}{
-		\begin{tabular}{lcc}
-			\toprule
-			Model and Image size & Inference time & Accuracy  \\ \midrule
-			SSD MobileNetV2 320p          & 49.5 ms  &  xxx            \\
-			SSD MobileNetV2 640p          & 58.5 ms  &  0.753            \\
-			SSD ResNet152V1 640p          & 100 ms  &  0.886            \\
-			SSD ResNet152V1 1024p          & 182.3 ms  &  0.942            \\
-			FasterRCNN ResNet50V1 640p          & 106.4 ms  &  0.889            \\
-			FasterRCNN ResNet50V1 1024p          & 120.5 ms  &  0.98           \\
-			FasterRCNN InceptionResNetV2 640p          & 361.8 ms  &  0.965            \\
-			FasterRCNN InceptionResNetV2 1024p          & 418.4 ms  &  1            \\
-			\bottomrule
-	\end{tabular}}
-	\caption{Inference time and F1 for different models and resolutions}
-	\label{tab: latency-overhead}
-	% \vspace{-0.5cm}
-\end{table}
+%\begin{figure}[!t]
+%	\includegraphics[width=9cm,height=8cm]{figures/m6.pdf}
+%	\centering
+%	\caption{The effect of different models, frame rate, and resolutions on accuracy and processing time. AutoConfigure (blue) consistently outperforms the baseline of one-time update (magenta) across different datasets. Each dot represents the results of running each solution.}
+%	\label{fig_m6}
+%\end{figure}
+
+\begin{figure*}[!t]
+		\begin{minipage}[t]{0.32\linewidth}
+			\centerline{\includegraphics[width=6.5cm]{figures/m6.pdf}}
+			\centerline{(a) M6}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.32\linewidth}
+			\centerline{\includegraphics[width=6.5cm]{figures/duke.pdf}}
+			\centerline{(b) Duke}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.32\linewidth}
+			\centerline{\includegraphics[width=6.5cm]{figures/_Westbound_Eastbound_Rear.pdf}}
+			\centerline{(c) Multi Camera Dataset}
+		\end{minipage}		
+		\caption{The effect of different models, frame rate, and resolutions on accuracy and processing time. AutoConfigure (blue) consistently outperforms the baseline of one-time update (magenta) across different datasets. Each dot represents the results of running each solution.}
+		\label{fig_results}
+\end{figure*}
