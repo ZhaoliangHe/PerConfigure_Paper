@@ -1,14 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{huang2017speed_accuracy}
-Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara,
-  Alireza Fathi, Ian Fischer, Zbigniew Wojna, Yang Song, Sergio Guadarrama,
-  et~al.,
-\newblock ``Speed/accuracy trade-offs for modern convolutional object
-  detectors,''
-\newblock in {\em Proceedings of the IEEE conference on computer vision and
-  pattern recognition}, 2017, pp. 7310--7311.
-
 \bibitem{ren2015faster_rcnn}
 Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun,
 \newblock ``Faster r-cnn: Towards real-time object detection with region
@@ -41,13 +32,6 @@ Joseph Redmon, Santosh Divvala, Ross Girshick, and Ali Farhadi,
 \newblock ``You only look once: Unified, real-time object detection,''
 \newblock in {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition}, 2016, pp. 779--788.
-
-\bibitem{howard2017mobilenets}
-Andrew~G Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
-  Tobias Weyand, Marco Andreetto, and Hartwig Adam,
-\newblock ``Mobilenets: Efficient convolutional neural networks for mobile
-  vision applications,''
-\newblock {\em arXiv preprint arXiv:1704.04861}, 2017.
 
 \bibitem{he2016resnet}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun,
@@ -142,5 +126,64 @@ Mauricio~Fadel Argerich, Bin Cheng, and Jonathan F{\"u}rst,
 \newblock ``Reinforcement learning based orchestration for elastic services,''
 \newblock in {\em 2019 IEEE 5th World Forum on Internet of Things (WF-IoT)}.
   IEEE, 2019, pp. 352--357.
+
+\bibitem{kang2017f1_noscope}
+Daniel Kang, John Emmons, Firas Abuzaid, Peter Bailis, and Matei Zaharia,
+\newblock ``Noscope: optimizing neural network queries over video at scale,''
+\newblock {\em arXiv preprint arXiv:1703.02529}, 2017.
+
+\bibitem{zhang2017f1_live}
+Haoyu Zhang, Ganesh Ananthanarayanan, Peter Bodik, Matthai Philipose, Paramvir
+  Bahl, and Michael~J Freedman,
+\newblock ``Live video analytics at scale with approximation and
+  delay-tolerance,''
+\newblock in {\em 14th $\{$USENIX$\}$ Symposium on Networked Systems Design and
+  Implementation ($\{$NSDI$\}$ 17)}, 2017, pp. 377--392.
+
+\bibitem{DQN}
+Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis
+  Antonoglou, Daan Wierstra, and Martin Riedmiller,
+\newblock ``Playing atari with deep reinforcement learning,''
+\newblock {\em arXiv preprint arXiv:1312.5602}, 2013.
+
+\bibitem{finetunning}
+Weifeng Ge and Yizhou Yu,
+\newblock ``Borrowing treasures from the wealthy: Deep transfer learning
+  through selective joint fine-tuning,''
+\newblock in {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, 2017, pp. 1086--1095.
+
+\bibitem{finetunning2}
+Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever,
+\newblock ``Improving language understanding by generative pre-training,''
+\newblock {\em URL https://s3-us-west-2. amazonaws.
+  com/openai-assets/research-covers/languageunsupervised/language understanding
+  paper. pdf}, 2018.
+
+\bibitem{MobileNetV2}
+Andrew~G Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
+  Tobias Weyand, Marco Andreetto, and Hartwig Adam,
+\newblock ``Mobilenets: Efficient convolutional neural networks for mobile
+  vision applications,''
+\newblock {\em arXiv preprint arXiv:1704.04861}, 2017.
+
+\bibitem{pensieve}
+Hongzi Mao, Ravi Netravali, and Mohammad Alizadeh,
+\newblock ``Neural adaptive video streaming with pensieve,''
+\newblock in {\em Proceedings of the Conference of the ACM Special Interest
+  Group on Data Communication}, 2017, pp. 197--210.
+
+\bibitem{trade-offs}
+Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara,
+  Alireza Fathi, Ian Fischer, Zbigniew Wojna, Yang Song, Sergio Guadarrama,
+  et~al.,
+\newblock ``Speed/accuracy trade-offs for modern convolutional object
+  detectors,''
+\newblock in {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, 2017, pp. 7310--7311.
+
+\bibitem{ffmpeg}
+FFmpeg,
+\newblock ``Ffmpeg,'' \url{http://ffmpeg.org/}, 2000–2018.
 
 \end{thebibliography}

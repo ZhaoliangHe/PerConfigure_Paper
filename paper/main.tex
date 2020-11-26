@@ -5,10 +5,24 @@
 \documentclass{article}
 \usepackage{spconf,amsmath,epsfig}
 
+\usepackage{balance}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usetikzlibrary{arrows, automata, shapes,snakes}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+%\usepackage{libertine}
+
 \usepackage{color}
 %\usepackage{ulem} 
 \usepackage{amssymb}
 \definecolor{note}{rgb}{0,0,1} %blue
+%\definecolor{revise}{rgb}{0,0,0} %black
+%\definecolor{revise2}{rgb}{0,0,1} 
 
 %\usepackage{microtype}
 %\usepackage{graphicx}
@@ -36,13 +50,13 @@
 
 % Title.
 % ------
-\title{AutoConfigure: a Context-driven Automatic Configuration Framework for Video Analytics Pipeline}
+\title{AutoConfigure: a Context-driven Automatic Configuration Framework for Video Analytics Services}
 %
 % Single address.
 % ---------------
 \name{Zhaoliang He\textsuperscript{\rm 1}, Yuan Wang\textsuperscript{\rm 3}, Chen Tang\textsuperscript{\rm 1}, Zhi Wang\textsuperscript{\rm 2}, Wenwu Zhu\textsuperscript{\rm 1}}
 %Address and e-mail should NOT be added in the submission paper. They should be present only in the camera ready paper. 
-\address{\textsuperscript{\rm 1}Department of Computer Science and Techonology, Tsinghua University, China\\ 
+\address{\textsuperscript{\rm 1}Department of Computer Science and Technology, Tsinghua University, China\\ 
 \textsuperscript{\rm 2}Tsinghua Shenzhen International Graduate School, Tsinghua University, China\\
 \textsuperscript{\rm 3}Tsinghua-Berkeley Shenzhen Institute, Tsinghua University, China
 }
@@ -52,7 +66,7 @@
 \input{sections/abstract.tex}
 \input{sections/introduction.tex}
 \input{sections/relatedwork.tex}
-%\input{sections/design}
+\input{sections/design}
 %\input{sections/evaluation.tex}
 \input{sections/experiment.tex}
 \input{sections/conclusion.tex}

@@ -2,10 +2,15 @@
 \BOOKMARK [1][-]{section.2}{ Related Works}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{ Static configuration optimization}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{ Dynamic configuration optimization}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{ Experiment}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{ Experiment Setup}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{ Configure Selection}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.3}{ Experiment Parameters}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.4}{ Some results}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{ Conclusion}{}% 10
-\BOOKMARK [1][-]{section.5}{ References}{}% 11
+\BOOKMARK [1][-]{section.3}{ Detailed Design}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{ Problem Formulation}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{ RL Agent Design}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{ Reinforcement Learning-based Framework}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{ Reward Feedback Design}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{ Experiment}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{ Datasets}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{ Configure Selection}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.3}{ Experiment Parameters}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.4}{ Experiment Results}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{ Conclusion}{}% 15
+\BOOKMARK [1][-]{section.6}{ References}{}% 16
