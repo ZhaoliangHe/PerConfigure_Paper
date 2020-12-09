@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2020.10.15)  9 DEC 2020 17:18
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2020.10.15)  9 DEC 2020 18:39
 entering extended mode
 **main.tex
 (E:\GitHub\PerConfigure_Paper\paper\main.tex
@@ -1038,10 +1038,13 @@ File: figures/duke_label.pdf Graphic file (type pdf)
 <use figures/duke_label.pdf>
 Package pdftex.def Info: figures/duke_label.pdf used on input line 44.
 (pdftex.def)             Requested size: 184.9429pt x 138.7083pt.
-File: figures/_Westbound_Eastbound_Rear.pdf Graphic file (type pdf)
- <use figures/_Westbound_Eastbound_Rear.pdf>
-Package pdftex.def Info: figures/_Westbound_Eastbound_Rear.pdf used on input li
-ne 49.
+
+<figures/_Westbound_Eastbound_Rear_label.pdf, id=355, 462.52798pt x 346.89601pt
+>
+File: figures/_Westbound_Eastbound_Rear_label.pdf Graphic file (type pdf)
+ <use figures/_Westbound_Eastbound_Rear_label.pdf>
+Package pdftex.def Info: figures/_Westbound_Eastbound_Rear_label.pdf used on in
+put line 49.
 (pdftex.def)             Requested size: 184.9429pt x 138.7083pt.
 
 Underfull \hbox (badness 1867) in paragraph at lines 58--59
@@ -1053,35 +1056,65 @@ Underfull \hbox (badness 2512) in paragraph at lines 58--59
 \OT1/ptm/m/n/10 ob-jec-t de-tec-tion mod-el-s in Ten-sor-flow, which are SS-
  []
 
-[5] <figures/Westbound.pdf, id=384, 462.52798pt x 346.89601pt>
+[5] <figures/Westbound.pdf, id=385, 462.52798pt x 346.89601pt>
 File: figures/Westbound.pdf Graphic file (type pdf)
 
 <use figures/Westbound.pdf>
 Package pdftex.def Info: figures/Westbound.pdf used on input line 84.
 (pdftex.def)             Requested size: 184.9429pt x 138.7083pt.
 
-<figures/Eastbound.pdf, id=385, 462.52798pt x 346.89601pt>
+<figures/Eastbound.pdf, id=386, 462.52798pt x 346.89601pt>
 File: figures/Eastbound.pdf Graphic file (type pdf)
 
 <use figures/Eastbound.pdf>
 Package pdftex.def Info: figures/Eastbound.pdf used on input line 89.
 (pdftex.def)             Requested size: 184.9429pt x 138.7083pt.
 
-<figures/Rear.pdf, id=386, 462.52798pt x 346.89601pt>
+<figures/Rear.pdf, id=387, 462.52798pt x 346.89601pt>
 File: figures/Rear.pdf Graphic file (type pdf)
  <use figures/Rear.pdf>
 Package pdftex.def Info: figures/Rear.pdf used on input line 94.
 (pdftex.def)             Requested size: 184.9429pt x 138.7083pt.
+
+Underfull \hbox (badness 1859) in paragraph at lines 101--102
+\OT1/ptm/m/n/10 wo ac-cu-ra-cy met-ric-s on d-if-fer-en-t dataset-s. Each ma-
+ []
+
+
+Underfull \hbox (badness 4120) in paragraph at lines 101--102
+\OT1/ptm/m/n/10 gen-ta dot rep-re-sents one stat-ic con-fig-u-ra-tion so-lu-tio
+n.
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 101--102
+\OT1/ptm/m/n/10 640p, 30f-p-s\OMS/cmsy/m/n/10 g\OT1/ptm/m/n/10 , \OMS/cmsy/m/n/
+10 f\OT1/ptm/m/n/10 FasterRCNN+ResNet50V1, 1024p, 25f-p-
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 101--102
+\OT1/ptm/m/n/10 s\OMS/cmsy/m/n/10 g \OT1/ptm/m/n/10 and so on, and some cheap c
+on-fig-u-ra-tions, such as
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 101--102
+\OMS/cmsy/m/n/10 f\OT1/ptm/m/n/10 SSD+ResNet152V1, 640p, 1f-p-s\OMS/cmsy/m/n/10
+ g\OT1/ptm/m/n/10 , \OMS/cmsy/m/n/10 f\OT1/ptm/m/n/10 SSD+ResNet152V1,
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <E:/GitHub/PerConfigure_Paper/paper/figures/m6.pdf> <E:/GitHub/PerConfigure
 _Paper/paper/figures/duke.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/_Wes
 tbound_Eastbound_Rear.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/m6_label
-.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/duke_label.pdf>] [7 <E:/GitHu
-b/PerConfigure_Paper/paper/figures/Westbound.pdf> <E:/GitHub/PerConfigure_Paper
-/paper/figures/Eastbound.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/Rear.
-pdf>])
+.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/duke_label.pdf> <E:/GitHub/Pe
+rConfigure_Paper/paper/figures/_Westbound_Eastbound_Rear_label.pdf>] [7 <E:/Git
+Hub/PerConfigure_Paper/paper/figures/Westbound.pdf> <E:/GitHub/PerConfigure_Pap
+er/paper/figures/Eastbound.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/Rea
+r.pdf>])
 (E:\GitHub\PerConfigure_Paper\paper\sections/conclusion.tex)
 (E:\GitHub\PerConfigure_Paper\paper\main.bbl
 Underfull \hbox (badness 7238) in paragraph at lines 27--31
@@ -1156,13 +1189,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17487 strings out of 495354
- 334907 string characters out of 3183858
+ 17492 strings out of 495354
+ 335133 string characters out of 3183858
  444943 words of memory out of 3000000
- 20165 multiletter control sequences out of 15000+200000
+ 20169 multiletter control sequences out of 15000+200000
  22422 words of font info for 57 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,12n,69p,1866b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,12n,69p,1884b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
 i10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/CTEX/MiKTe
@@ -1175,9 +1208,9 @@ KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/CTEX/MiKTeX/fonts/type1
 /urw/courier/ucrr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on main.pdf (9 pages, 1027259 bytes).
+Output written on main.pdf (9 pages, 1043807 bytes).
 PDF statistics:
- 861 PDF objects out of 1000 (max. 8388607)
+ 909 PDF objects out of 1000 (max. 8388607)
  82 named destinations out of 1000 (max. 500000)
- 220 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
