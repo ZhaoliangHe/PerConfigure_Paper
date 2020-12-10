@@ -5,17 +5,9 @@ With the increasing demand for continuous video analytics in public safety and t
 
 %For the collected video, the classical computer vision and deep neural network technology are generally used for video analytics. 
 
-A video analytics application consists of a \emph{pipeline} of several video processing modules, typically including a decoder, a selective sampling frame application, and a target detector. Such a pipeline always has multiple \emph{knobs}, such as frame rate, resolution, and model (e.g., SSD+\{MobileNet \cite{MobileNetV2}, ResNet \cite{he2016resnet}\}, FasterRCNN+\{ResNet,InceptionResNet \cite{szegedy2016inception}\}). A combination of the knob values is video analytics \emph{configuration}. The configuration space grows \emph{exponentially} with the number of knobs, and their values \cite{jiang2018chameleon}. Since video analytics applications demand intensive computation resources and high accuracy, we pay much attention to the consumption of resources in the calculation process and the inference accuracy. Therefore, the problem that follows is how to balance \emph{resource consumption} and \emph{accuracy}. Different configurations directly affect accuracy and resource consumption. Using a fixed static high configuration can be very precise, but it can also be a huge drain on resource consumption. Similarly, specifying a low configuration will result in a significant reduction in accuracy.
+A video analytics application consists of a \emph{pipeline} of several video processing modules, typically including a decoder, a selective sampling frame application, and a target detector. Such a pipeline always has multiple \emph{knobs}, such as frame rate, resolution, and model (e.g., SSD+\{MobileNet \cite{MobileNetV2}, ResNet \cite{he2016resnet}\}, FasterRCNN+\{ResNet,InceptionResNet \cite{szegedy2016inception}\}). A combination of the knob values is video analytics \emph{configuration}, and the configuration space grows \emph{exponentially} with the number of knobs, and their values \cite{jiang2018chameleon}.
 
-%Apparently, choosing different configurations will affect resource consumption and accuracy. When at a fixed frame rate, using a complex model with high resolution can obviously and accurately detect the target object, but it also requires more computing resources. Similarly, when using the same model with the same resolution, choosing a lower resolution can reduce the computing resources, and the subsequent cost is the decline of accuracy. When the target car (object) is large, a smaller model and a lower resolution can meet the accuracy with a considerable reduction of resource consumption, while the target car (object) is small, a more complex model and higher resolution are needed to achieve satisfactory accuracy. And in the case of highway video analytics, the rate of car travel cannot be predicted in advance, so when the car drives slowly (or static) because of the traffic jam, we can choose a lower frame rate (such as 1 FPS) instead of having to use a constant high frame rate throughout the whole video. This can significantly reduce resource consumption but does not affect the accuracy of video analytics. 
-
-
-%\begin{figure*}[!t]
-%	\centerline{\includegraphics[width=0.9\linewidth]{figures/framework.pdf}}
-%	%	\vspace{0.2cm}
-%	\caption{Framework of AutoConfigure architecture}
-%	\label{fig: framework}
-%\end{figure*}
+Different configurations directly affect accuracy and resource consumption. The best configuration is the one with the lowest resource demand whose accuracy is over the desired threshold, whcih can optimize the \emph{trade-off} between accuracy and energy consumption. The \emph{best} configuration for video analysis services often varies in minutes or even seconds \cite{jiang2018chameleon}. As shown in figure~\ref{fig: framework}(a), if one just uses a fixed static expensive configuration (e.g. only profiles the processing pipeline \emph{once} to choose high frame rate and resolution) can be very precise, but it can also be a huge drain on resource consumption. Similarly, specifying a fixed static cheap (e.g., low resolution and small model) configuration will significantly reduce accuracy. To tackle these challenges, we propose an adaptive configuration approach, AdaConfigure, and the brief framework is shown in Figure~\ref{fig: framework}(b). In our solution, we tackle the following design challenges.
 
 \begin{figure*}[!t]
 	%\begin{tabular}{cc}
@@ -32,14 +24,52 @@ A video analytics application consists of a \emph{pipeline} of several video pro
 		\centerline{\includegraphics[width=0.8\linewidth]{figures/auto_framework.pdf}}
 		\vspace{0.2cm}
 		\begin{center}
-			{(b) AutoConfigure solution: context-driven automatic configuration framework}
+			{(b) AdaConfigure solution: reinforcement learning-based adaptive configuration framework}
 		\end{center}
 	\end{minipage}
 	%\end{tabular}
 	%\vspace{0.1cm}
-	\caption{Comparing to the static solution, our solution can update the configuration strategy based on the object detection model feedback}
+	\caption{Comparing to the static solution, our solution can adaptively update the configuration strategy based on the object detection model feedback}
+	%	\caption{Comparing to the static solution, our solution can update the configuration strategy based on the object detection model feedback}
 	\label{fig: framework}
 \end{figure*}
+
+\begin{itemize}	
+	\item \emph{Choosing the best configuration is a complicated decision-making problem that is challenging to solve by rules.} The best configuration for video analytics services changes significantly because the exact context of the videos varies over time and across space. For instance, tracking vehicles when traffic moves quickly requires a much higher frame rate than when traffic moves slowly, but each condition may vary by hour, minute, even second. Spatially, the characteristics of video content are different in different locations. For instance, cameras in downtown areas show more cars than the other cameras deployed in the suburbs. It is hard to make an exact rule to choose a configuration for the current context by profiling such complicated video's characteristics.
+	%As a dynamic video analytics configuration %solution
+	%application, we target to provide a solution that dynamically picks a configuration according to intrusive dynamics of video contexts, i.e., it can \emph{generate} video analytics configuration for video analytics in a different time.
+	
+	\item \emph{Adaptive configuration would cause a huge extra overhead.} The number of possible configurations grows exponentially, and thousands of configurations can be combined with just a few knobs \cite{jiang2018chameleon}. So exhaustive periodically (e.g., profile once per 4 seconds) configuration to find the best configuration is a highly unrealistic approach because it causes a huge extra overhead, which may exceed the benefits of adaptive configurations. To significantly reduce the resource cost for adaptive configuration profiling requires one solution that automaticly choose a configuration instead of manually trying using various configurations, which is challengling to previous studies including \cite{wang2020jcab,jiang2018chameleon}, since their approach pay attention to reduce search space algorithm and still try using various configurations to find the best configuration. 
+	
+	%We leverage a Reinforcement Learning-based agent to adaptively pick the best configuration periodically, dramatically reducing the profiling cost. 
+	%How to significantly reduce the resource cost of periodic configuration profiling.
+	
+	%\item \emph{Lack of well-labeled training data.} In our case, there was no well-marked data that indicated which configuration should be choosed at which time of the video, as is the case with traditional deep learning tasks.%In our problem, one is not provided the well-labeled data on which configuration should be used in which time of the video, as in conventional supervised deep learning tasks. In practice, such a video analytics configuration is usually utilized online, and the solution has to adaptively learn from the video contexts. 
+\end{itemize}
+
+To address the above complicated decision-making problem and reduce the huge extra overhead of manually trying using various configurations, we carefully design an adaptive configuration framework based on reinforcement learning, which is an excellent approach to solve this unsupervised complex-environmental problem. AutoConfigure can adaptively and automatically select the best configuration according to intrusive dynamics of video contexts, thus solving this difficult optimal configuration decision problem in a very low-cost way. To the best of our knowledge, we are the first to propose an adaptive video configuration solution that adaptively and automatically chooses a configuration according to the current video context. The main contributions of this paper are summarized as follows.
+
+\begin{itemize}	
+	\item We propose a Deep Q-learning Network-based \cite{DQN} agent to adaptively pick the best video analytics configuration according to intrusive dynamics of video contexts. Also, we define the elements of the RL-based approach, such as actions, states, and rewards, to adapt the configuration to the current video context. In the state design, we extract the spatial and temporal features of the video context, so that the agent can adaptively update configuration over time and achieve a superior performance on the multi-camera situation. In the reward desgin, we carefully consider both inference accuracy and computation resources to assess each configuration's impact. Also, to meet different accuracy-demand services, we leverage the balance factor in the reward function to train different agents. In our design, our solution can adaptively update configuration strategy over time, and it adaptive to different location-camera inferences and different accuracy-demand services. 	
+	%	 We design an interactive training environment that can be applied to different video analytics applications.
+	%	\item We build a reinforcement learning-based framework to train the agent in the above environment. The agent can learn to choose a ``most appropriate'' configuration for each timestamp of video analytics after iteratively interacting with the environment by feeding the carefully designed reward that considers both accuracy and resources.
+	
+	\item We leverage dividing video strategy and the extremely short choosing action time of agent to reduce profiling cost. In the evaluation, AdaConfigure achieves 10-35\% higher accuracy with a similar amount of resources or achieves similar accuracy with only 60-90\% of the resources. Our solution proves to be more efficient than static solutions and only creates an overhead of 0.1-1\% to the overall video analytics services.
+\end{itemize}
+
+%The rest of this paper is organized as follows. We discuss related works in Section \ref{Section: related_works}. We present our framework and detailed design in Section \ref{Section: design}. We present our solution's performance in Section \ref{Section: evaluation} and conclude the paper in Section \ref{Section: conclusion}.
+
+%Since video analytics applications demand intensive computation resources and high accuracy, we pay much attention to the consumption of resources in the calculation process and the inference accuracy. Therefore, the problem that follows is how to balance \emph{resource consumption} and \emph{accuracy}.
+
+%Apparently, choosing different configurations will affect resource consumption and accuracy. When at a fixed frame rate, using a complex model with high resolution can obviously and accurately detect the target object, but it also requires more computing resources. Similarly, when using the same model with the same resolution, choosing a lower resolution can reduce the computing resources, and the subsequent cost is the decline of accuracy. When the target car (object) is large, a smaller model and a lower resolution can meet the accuracy with a considerable reduction of resource consumption, while the target car (object) is small, a more complex model and higher resolution are needed to achieve satisfactory accuracy. And in the case of highway video analytics, the rate of car travel cannot be predicted in advance, so when the car drives slowly (or static) because of the traffic jam, we can choose a lower frame rate (such as 1 FPS) instead of having to use a constant high frame rate throughout the whole video. This can significantly reduce resource consumption but does not affect the accuracy of video analytics. 
+
+
+%\begin{figure*}[!t]
+%	\centerline{\includegraphics[width=0.9\linewidth]{figures/framework.pdf}}
+%	%	\vspace{0.2cm}
+%	\caption{Framework of AutoConfigure architecture}
+%	\label{fig: framework}
+%\end{figure*}
 
 %We use~\autoref{fig2} to support that, the data in this figure come from a real road. It can be found that with the decrease of frame rate, the resource consumption can be significantly reduced, but the reduction of accuracy is partly acceptable.
 
@@ -59,39 +89,16 @@ A video analytics application consists of a \emph{pipeline} of several video pro
 %\label{fig2}
 %\end{figure}
 
-The \emph{best} configuration for video analysis services often varies in minutes or even seconds \cite{jiang2018chameleon}.
-%The \emph{best} configuration for a video analytics services also varies over time, often at a timescale of minutes or even seconds \cite{jiang2018chameleon}.
-Hence, we aim to find a range of ``most appropriate'' configurations that %takes up the
-minimize the consumption of computing resources and is accurate to the desired threshold. On the one hand, like figure~\ref{fig: framework}(a), if just use a unified static configuration solution (i.e.only profiles the processing pipeline to choose the best configuration \emph{once}), the application would either waste resources (by picking an expensive configuration) or sacrifice accuracy (by selecting a cheap configuration). On the other hand, if one periodically profiles the processing pipeline to find an optimal resource-accuracy \emph{tradeoff} by exhaustive all configurations, it would be prohibitively expensive since the configuration space is extremely large, and thousands of configurations can be combined with just a few knobs. To tackle these challenges, we propose an automatic configuration approach, AutoConfigure, and the brief framework is shown in Figure~\ref{fig: framework}(b).
+
+%Like figure~\ref{fig: framework}(a), if one just use a unified static configuration solution (i.e.only profiles the processing pipeline to choose the best configuration \emph{once}), the application would either waste resources (by picking an expensive configuration) or sacrifice accuracy (by selecting a cheap configuration).
+
+%Hence, we aim to find a range of ``most appropriate'' configurations that %takes up the
+%minimize the consumption of computing resources and is accurate to the desired threshold. On the one hand, like figure~\ref{fig: framework}(a), if one just use a unified static configuration solution (i.e.only profiles the processing pipeline to choose the best configuration \emph{once}), the application would either waste resources (by picking an expensive configuration) or sacrifice accuracy (by selecting a cheap configuration). On the other hand, if one periodically profiles the processing pipeline to find an optimal resource-accuracy \emph{tradeoff} by exhaustive all configurations, it would be prohibitively expensive since the configuration space is extremely large, and thousands of configurations can be combined with just a few knobs. To tackle these challenges, we propose an adaptive configuration approach, AutoConfigure, and the brief framework is shown in Figure~\ref{fig: framework}(b).
 
 %The most intuitive way to solve this problem is to find the best solution by exhaustive all configurations. Still, the number of possible configurations grows exponentially, and thousands of configurations can be combined with just a few knobs, so exhaustive configuration is a highly unrealistic approach.
 
-For a video analytics application, choosing the ``most appropriate'' configuration is a complicated decision-making problem that is challenging to solve by rules. An automatic approach is needed to learn from video contexts to decide the best configuration for the current video context. The reinforcement learning method is an excellent way to solve this unsupervised complex-environmental problem. In our solution, we tackle the following design challenges.
+%For a video analytics application, choosing the ``most appropriate'' configuration is a complicated decision-making problem that is challenging to solve by rules. An adaptive approach is needed to learn from video contexts to decide the best configuration for the current video context. The reinforcement learning method is an excellent way to solve this unsupervised complex-environmental problem. In our solution, we tackle the following design challenges.
 
 
 %Also, one is not provided the well-labeled data on which configuration should be used at which time of the video, meaning this is an unsupervised learning task.
 
-\begin{itemize}	
-	\item \emph{The best configuration for video analytics services changes over time with the video content.} %environment.
-Video content varies with the real-world environment, so the best configuration is changing;
-%The real-world environment is non-stationary;
- for instance, tracking vehicles when traffic moves quickly require a much higher frame rate than when traffic moves slowly, but when each condition occurs may vary by hour, minute, even second. As a dynamic video analytics configuration %solution
-application, we target to provide a solution that dynamically picks a configuration according to intrusive dynamics of video contexts, i.e., it can \emph{generate} video analytics configuration for video analytics in a different time.
-	
-	\item \emph{How to significantly reduce the resource cost of periodic configuration profiling.} Because of the large configuration space, the cost of periodically profiling often exceeds any resource savings gained by adapting the best configurations we end up selecting. We leverage a Reinforcement Learning-based agent to automatically pick the best configuration periodically, dramatically reducing the profiling cost. 
-	
-	\item \emph{Lack of well-labeled training data.} In our case, there was no well-marked data that indicated which configuration should be choosed at which time of the video, as is the case with traditional deep learning tasks.%In our problem, one is not provided the well-labeled data on which configuration should be used in which time of the video, as in conventional supervised deep learning tasks. 
-In practice, such a video analytics configuration is usually utilized online, and the solution has to automatically learn from the video contexts. 
-\end{itemize}
-
-To address the above challenges, we present a context-driven automatic configuration framework based on reinforcement learning, called AutoConfigure, which can dynamically select the ``most appropriate'' configuration according to intrusive dynamics of video contexts, thus solving this difficult optimal configuration decision problem in a very low-cost way. The main contributions of this paper are summarized as follows.
-
-\begin{itemize}	
-	\item We design an interactive training environment that can be applied to different video analytics applications. We propose a Deep Q-learning Network-based \cite{DQN} agent to pick the best video analytics configuration. Also, we define the elements of the RL-based approach, such as actions, states, and rewards, to adapt the configuration to the current video context.
-	
-	\item We build a reinforcement learning-based framework to train the agent in the above environment. The agent can learn to choose a ``most appropriate'' configuration for each timestamp of video analytics after iteratively interacting with the environment by feeding the carefully designed reward that considers both accuracy and resources.
-	
-	\item AutoConfigure achieves 10-35\% higher accuracy with a similar amount of resources or achieves similar accuracy with only 60-90\% of the resources. AutoConfigure proves to be more efficient than static solutions and only creates an overhead of 0.1-1\% to the overall video analytics services.
-\end{itemize}
-
-%The rest of this paper is organized as follows. We discuss related works in Section \ref{Section: related_works}. We present our framework and detailed design in Section \ref{Section: design}. We present our solution's performance in Section \ref{Section: evaluation} and conclude the paper in Section \ref{Section: conclusion}.
