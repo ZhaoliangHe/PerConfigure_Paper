@@ -61,6 +61,7 @@ is the harmonic mean of precision and recall, where the precision is true positi
 \subsection{Experiment Parameters}
 We apply a deep Q-learning network policy to train the agent. In the training procedure, we build up to eight independently identical environments for each data set to speed up the training and decrease the data's dependency. The leaning rate is set to 0.001. For each dataset, we train the agent 10 epochs and 1000 steps per epoch. Some important hyperparameters in our experiments are given in Table ~\ref{tab: parameters}.
 
+
 \begin{table}[!t]
 	\centering
 	\label{tab: parameters}
@@ -79,6 +80,8 @@ We apply a deep Q-learning network policy to train the agent. In the training pr
 	%	\vspace{-0.5cm}
 \end{table}
 
+
+\subsection{Experiment Results}
 We use bounding box-based and label-based metric to evaluate AdaConfigure on M6, Duke, and Multi-Camera Dataset video streams. Figure \ref{fig: results} shows that AdaConfigure consistently outperforms the baseline of static configuration (profiling configurations once at the beginning of a video stream) along with resource consumption and two accuracy metrics on different datasets. Each magenta dot represents one static configuration solution (one-time profiling). These static configuration solutions include some expensive configurations, such as \{FasterRCNN+InceptionResNetV2, 640p, 30fps\}, \{FasterRCNN+ResNet50V1, 1024p, 25fps\} and so on, and some cheap configurations, such as \{SSD+ResNet152V1, 640p, 1fps\}, \{SSD+ResNet152V1, 640p, 2fps\}, \{SSD+ResNet152V1, 640p, 5fps\} and so on. Each blue dot represents one AdaConfigure configuration solution, which is dependent on the balance factor $\beta$ in reward function, presented in Section \ref{subsec: reward}. The detailed discussion about differents AdaConfigure solutions is in Section \ref{subsec: different sulutions}. Note that AdaConfigure's resource consumption includes both running the best configuration to get inference results and profiling cost of adaptive configuration, which detailed discussed in \ref{subsec: profile cost}. As shown in Figure \ref{fig: results}(a)(d), AdaConfigure achieves 10-30\% higher accuracy with a similar amount of resources, or achieve a similar accuracy with only 60-80\% of the resources on the M6 dataset. As shown in Figure \ref{fig: results}(b)(e), AdaConfigure achieves 10-20\% higher accuracy with a similar amount of resources, or achieve a similar accuracy with only 80-90\% of the resources on a Duke dataset. As shown in Figure \ref{fig: results}(c)(f), AdaConfigure achieves 25-35\% higher accuracy with a similar amount of resources, or achieve higher accuracy with only 75-85\% of the resources on Multi-Camera Dataset. In a word, AdaConfigure can improve 10-35\% higher accuracy or save 60-90\% resource consumption.
 
 \subsubsection{Superior Performance on Multi-camera Situation}
@@ -86,7 +89,6 @@ We use bounding box-based and label-based metric to evaluate AdaConfigure on M6,
 
 To compare AdaConfigure's performance on single-camera inference and multi-camera inference, we respectively train and test the agent on each single-camera dataset of Multi-Camera Dataset. Figure \ref{fig: 3dataset results}(a)(b)(c) shows that AdaConfigure achieves 10-20\% higher accuracy with a similar amount of resources, or achieve a similar accuracy with only 50-60\% of the resources on a single-camera inference.  As shown in Figure \ref{fig: results}(c), the gap between AdaConfigure and static configuration is larger than Figure \ref{fig: 3dataset results}(a)(b)(c), indicating that AdaConfigure has a better improvement on the multi-camera situation. AdaConfigure achieves 25-35\% higher accuracy with a similar amount of resources, or reach higher accuracy with only 75-85\% of the resources on multi-camera inference. AdaConfigure achieves superior performance on multi-camera inference than single-camera inference. Instead of the static solution using fixed configuration in different situations, AdaConfigure can choose a proper configuration for different situations since the exact spatial characteristics of the video contents are different in different locations. It proves that our solution can pick the proper configuration according to intrusive dynamics of video contexts, including spatial and temporal features.
 
-\subsection{Experiment Results}
 \begin{figure*}[!t]
 	\begin{minipage}[t]{0.32\linewidth}
 		\centerline{\includegraphics[width=6.5cm]{figures/Westbound.pdf}}
