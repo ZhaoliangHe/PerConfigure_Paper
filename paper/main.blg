@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
 Case mismatch error between cite keys ffmpeg and FFmpeg
 ---line 69 of file main.aux
  : \citation{ffmpeg
@@ -6,4 +8,45 @@ Case mismatch error between cite keys ffmpeg and FFmpeg
 I'm skipping whatever remains of this command
 The style file: IEEEbib.bst
 Database file #1: ref.bib
+You've used 22 entries,
+            1838 wiz_defined-function locations,
+            560 strings with 8179 characters,
+and the built_in function-call counts, 6988 in all, are:
+= -- 599
+> -- 379
+< -- 13
++ -- 134
+- -- 112
+* -- 502
+:= -- 1030
+add.period$ -- 25
+call.type$ -- 22
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 333
+empty$ -- 632
+format.name$ -- 112
+if$ -- 1623
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 21
+newline$ -- 112
+num.names$ -- 22
+pop$ -- 99
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 226
+stack$ -- 0
+substring$ -- 436
+swap$ -- 150
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 63
+width$ -- 24
+write$ -- 239
 (There was 1 error message)

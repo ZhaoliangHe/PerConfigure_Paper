@@ -1,47 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{trade-offs}
-Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara,
-  Alireza Fathi, Ian Fischer, Zbigniew Wojna, Yang Song, Sergio Guadarrama,
-  et~al.,
-\newblock ``Speed/accuracy trade-offs for modern convolutional object
-  detectors,''
-\newblock in {\em Proceedings of the IEEE conference on computer vision and
-  pattern recognition}, 2017, pp. 7310--7311.
-
-\bibitem{ren2015faster_rcnn}
-Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun,
-\newblock ``Faster r-cnn: Towards real-time object detection with region
-  proposal networks,''
-\newblock in {\em Advances in neural information processing systems}, 2015, pp.
-  91--99.
-
-\bibitem{dai2016r_fcn}
-Jifeng Dai, Yi~Li, Kaiming He, and Jian Sun,
-\newblock ``R-fcn: Object detection via region-based fully convolutional
-  networks,''
-\newblock in {\em Advances in neural information processing systems}, 2016, pp.
-  379--387.
-
-\bibitem{szegedy2014multibox}
-Christian Szegedy, Scott Reed, Dumitru Erhan, Dragomir Anguelov, and Sergey
-  Ioffe,
-\newblock ``Scalable, high-quality object detection,''
-\newblock {\em arXiv preprint arXiv:1412.1441}, 2014.
-
-\bibitem{liu2016ssd}
-Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed,
-  Cheng-Yang Fu, and Alexander~C Berg,
-\newblock ``Ssd: Single shot multibox detector,''
-\newblock in {\em European conference on computer vision}. Springer, 2016, pp.
-  21--37.
-
-\bibitem{redmon2016yolo}
-Joseph Redmon, Santosh Divvala, Ross Girshick, and Ali Farhadi,
-\newblock ``You only look once: Unified, real-time object detection,''
-\newblock in {\em Proceedings of the IEEE conference on computer vision and
-  pattern recognition}, 2016, pp. 779--788.
-
 \bibitem{MobileNetV2}
 Andrew~G Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
   Tobias Weyand, Marco Andreetto, and Hartwig Adam,
@@ -165,6 +123,15 @@ Hongzi Mao, Ravi Netravali, and Mohammad Alizadeh,
 \newblock ``Neural adaptive video streaming with pensieve,''
 \newblock in {\em Proceedings of the Conference of the ACM Special Interest
   Group on Data Communication}, 2017, pp. 197--210.
+
+\bibitem{trade-offs}
+Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara,
+  Alireza Fathi, Ian Fischer, Zbigniew Wojna, Yang Song, Sergio Guadarrama,
+  et~al.,
+\newblock ``Speed/accuracy trade-offs for modern convolutional object
+  detectors,''
+\newblock in {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, 2017, pp. 7310--7311.
 
 \bibitem{overlap}
 Mark Everingham, Luc Van~Gool, Christopher~KI Williams, John Winn, and Andrew
