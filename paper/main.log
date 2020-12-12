@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.8.28)  13 DEC 2020 01:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.8.28)  13 DEC 2020 02:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,11 +846,11 @@ pdfTeX warning: pdflatex.exe (file ./figures/auto_framework.pdf): PDF inclusion
 
 pdfTeX warning: pdflatex.exe (file ./figures/framework2.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<figures/framework2.pdf, id=249, 935.1738pt x 314.25404pt>
+<figures/framework2.pdf, id=249, 935.1738pt x 228.855pt>
 File: figures/framework2.pdf Graphic file (type pdf)
 <use figures/framework2.pdf>
 Package pdftex.def Info: figures/framework2.pdf  used on input line 6.
-(pdftex.def)             Requested size: 455.81004pt x 153.17065pt.
+(pdftex.def)             Requested size: 455.81004pt x 111.54628pt.
 [3]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 47.
@@ -860,7 +860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
  []
 
 ) (./sections/experiment.tex
-Underfull \vbox (badness 1178) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <./figures/framework2.pdf>]
 <figures/m6.pdf, id=372, 462.52798pt x 346.89601pt>
@@ -1021,7 +1021,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
 Here is how much of TeX's memory you used:
  20467 strings out of 480608
  417408 string characters out of 5907536
- 678436 words of memory out of 5000000
+ 679436 words of memory out of 5000000
  35792 multiletter control sequences out of 15000+600000
  549808 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1040,7 +1040,7 @@ ublic/amsfonts/symbols/msbm10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/c
 ourier/ucrr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
 <c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2020/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 874678 bytes).
+Output written on main.pdf (8 pages, 873657 bytes).
 PDF statistics:
  908 PDF objects out of 1000 (max. 8388607)
  423 compressed objects within 5 object streams
