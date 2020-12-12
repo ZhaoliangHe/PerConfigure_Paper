@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{liu2016ssd}
+Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed,
+  Cheng-Yang Fu, and Alexander~C Berg,
+\newblock ``Ssd: Single shot multibox detector,''
+\newblock in {\em European conference on computer vision}. Springer, 2016, pp.
+  21--37.
+
 \bibitem{MobileNetV2}
 Andrew~G Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
   Tobias Weyand, Marco Andreetto, and Hartwig Adam,
@@ -12,6 +19,13 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun,
 \newblock ``Deep residual learning for image recognition,''
 \newblock in {\em Proceedings of the IEEE conference on computer vision and
   pattern recognition}, 2016, pp. 770--778.
+
+\bibitem{ren2015faster_rcnn}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun,
+\newblock ``Faster r-cnn: Towards real-time object detection with region
+  proposal networks,''
+\newblock in {\em Advances in neural information processing systems}, 2015, pp.
+  91--99.
 
 \bibitem{szegedy2016inception}
 Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, and Alex Alemi,
