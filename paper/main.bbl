@@ -1,35 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{liu2016ssd}
-Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed,
-  Cheng-Yang Fu, and Alexander~C Berg,
-\newblock ``Ssd: Single shot multibox detector,''
-\newblock in {\em ECCV}. Springer, 2016, pp. 21--37.
-
-\bibitem{MobileNetV2}
-Andrew~G Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
-  Tobias Weyand, Marco Andreetto, and Hartwig Adam,
-\newblock ``Mobilenets: Efficient convolutional neural networks for mobile
-  vision applications,''
-\newblock {\em arXiv preprint arXiv:1704.04861}, 2017.
-
-\bibitem{he2016resnet}
-Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun,
-\newblock ``Deep residual learning for image recognition,''
-\newblock in {\em CVPR}, 2016, pp. 770--778.
-
-\bibitem{ren2015faster_rcnn}
-Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun,
-\newblock ``Faster r-cnn: Towards real-time object detection with region
-  proposal networks,''
-\newblock in {\em NIPS}, 2015, pp. 91--99.
-
-\bibitem{szegedy2016inception}
-Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, and Alex Alemi,
-\newblock ``Inception-v4, inception-resnet and the impact of residual
-  connections on learning,''
-\newblock {\em arXiv preprint arXiv:1602.07261}, 2016.
-
 \bibitem{jiang2018chameleon}
 Junchen Jiang, Ganesh Ananthanarayanan, Peter Bodik, Siddhartha Sen, and Ion
   Stoica,
@@ -61,13 +31,6 @@ Chien-Chun Hung, Ganesh Ananthanarayanan, Peter Bodik, Leana Golubchik, Minlan
 \newblock ``Videoedge: Processing camera streams using hierarchical clusters,''
 \newblock in {\em SEC}. IEEE, 2018, pp. 115--131.
 
-\bibitem{han2016mcdnn}
-Seungyeop Han, Haichen Shen, Matthai Philipose, Sharad Agarwal, Alec Wolman,
-  and Arvind Krishnamurthy,
-\newblock ``Mcdnn: An approximation-based execution framework for deep stream
-  processing under resource constraints,''
-\newblock in {\em MobiSys}, 2016, pp. 123--136.
-
 \bibitem{hsieh2018focus}
 Kevin Hsieh, Ganesh Ananthanarayanan, Peter Bodik, Shivaram Venkataraman,
   Paramvir Bahl, Matthai Philipose, Phillip~B Gibbons, and Onur Mutlu,
@@ -91,18 +54,6 @@ Mauricio~Fadel Argerich, Bin Cheng, and Jonathan F{\"u}rst,
 \newblock ``Reinforcement learning based orchestration for elastic services,''
 \newblock in {\em WF-IoT}. IEEE, 2019, pp. 352--357.
 
-\bibitem{kang2017f1_noscope}
-Daniel Kang, John Emmons, Firas Abuzaid, Peter Bailis, and Matei Zaharia,
-\newblock ``Noscope: optimizing neural network queries over video at scale,''
-\newblock {\em arXiv preprint arXiv:1703.02529}, 2017.
-
-\bibitem{zhang2017f1_live}
-Haoyu Zhang, Ganesh Ananthanarayanan, Peter Bodik, Matthai Philipose, Paramvir
-  Bahl, and Michael~J Freedman,
-\newblock ``Live video analytics at scale with approximation and
-  delay-tolerance,''
-\newblock in {\em NSDI}, 2017, pp. 377--392.
-
 \bibitem{FFmpeg}
 FFmpeg,
 \newblock ``Ffmpeg,'' \url{http://ffmpeg.org/}, 2000–2018.
@@ -119,6 +70,13 @@ Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever,
 \newblock {\em URL https://s3-us-west-2. amazonaws.
   com/openai-assets/research-covers/languageunsupervised/language understanding
   paper. pdf}, 2018.
+
+\bibitem{MobileNetV2}
+Andrew~G Howard, Menglong Zhu, Bo~Chen, Dmitry Kalenichenko, Weijun Wang,
+  Tobias Weyand, Marco Andreetto, and Hartwig Adam,
+\newblock ``Mobilenets: Efficient convolutional neural networks for mobile
+  vision applications,''
+\newblock {\em arXiv preprint arXiv:1704.04861}, 2017.
 
 \bibitem{pensieve}
 Hongzi Mao, Ravi Netravali, and Mohammad Alizadeh,
