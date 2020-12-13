@@ -38,17 +38,6 @@ Kevin Hsieh, Ganesh Ananthanarayanan, Peter Bodik, Shivaram Venkataraman,
   cost,''
 \newblock in {\em OSDI}, 2018, pp. 269--286.
 
-\bibitem{romero2019infaas}
-Francisco Romero, Qian Li, Neeraja~J Yadwadkar, and Christos Kozyrakis,
-\newblock ``Infaas: A model-less inference serving system,''
-\newblock {\em arXiv preprint arXiv:1905.13348}, 2019.
-
-\bibitem{ullah2019quickadapt}
-Faheem Ullah and M~Ali Babar,
-\newblock ``Quickadapt: Scalable adaptation for big data cyber security
-  analytics,''
-\newblock in {\em ICECCS}. IEEE, 2019, pp. 81--86.
-
 \bibitem{argerich2019orchestration}
 Mauricio~Fadel Argerich, Bin Cheng, and Jonathan F{\"u}rst,
 \newblock ``Reinforcement learning based orchestration for elastic services,''
