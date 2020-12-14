@@ -101,7 +101,7 @@ For metric, we use the F1 score as the accuracy and average GPU processing time 
 
 \subsection{Experiment Parameters}
 %We apply a deep Q-learning network policy to train the agent. 
-In the training procedure, we build up to eight independently identical environments for each data set to speed up the training and decrease the data's dependency. For each dataset, we train the agent 5 epochs and 600 steps (5 mins) per epoch. Some important hyperparameters in our experiments are given in Table ~\ref{tab: parameters}.
+In the training procedure, we build up to eight independently identical environments for each data set to speed up the training and decrease the data's dependency. For each dataset, we train the agent 5 epochs and 600 steps (5 minutes) per epoch. Some important hyperparameters in our experiments are given in Table ~\ref{tab: parameters}.
 %The leaning rate is set to 0.001.
 
 \begin{table}[!t]
@@ -117,7 +117,7 @@ In the training procedure, we build up to eight independently identical environm
 			$ t(inference)  $  &  1   & & &   $ T (inference)  $  &  4      \\ 
 			\bottomrule
 	\end{tabular}}
-	\caption{Experiment parameters}
+	\caption{Experiment parameters.}
 	\label{tab: parameters}
 %	\vspace{-0.5cm}
 \end{table}
@@ -201,11 +201,14 @@ As shown in Figure \ref{fig: results}, Adaconfigure achieves a high accuracy of 
 %chunk is passed to the AdaConfigure firstly to estimate the configuration. Running this RL agent brings profiling cost (extra resource consumption) to the whole system. 
 %In this section, we evaluate this profiling cost. 
 %In the inference phase, we divide the video into $T$-second intervals as video chunks and use AdaConfigure to choose the proper configuration for the first t seconds of the video chunk. It then sticks with the chosen configuration for the rest of the video chunk, i.e., for $T-t$ seconds. We use T = 4 and t = 1 for our experiments.
+\hyphenation{profiling} 
+\hyphenation{embeddings}
 In our solution, the video chunk is passed to the AdaConfigure firstly to estimate the configuration, bringing profiling cost (extra resource consumption) to the whole system. 
 The profiling cost, including the resource of extract $k_1$ embeddings and the cost of agent choosing actions. We test the average time on 30 hours video of Multi-Camera Dataset, and conclude that the average time of extract one embedding is 0.02s, and the average time of agent choosing action is 0.0006s, which can be ignored. We compute the ratio by dividing profiling time into total inference time as metric of profiling cost.
 %, which is equals the frame number multiply the average time per frame. 
-The profiling cost is about 0.2-2\% of the overall video analytics resource consumption. The concrete ratio depends on the concrete AdaConfigure configuration solutions, such as the solutions listed in Table \ref{tab: different sulutions}. For instance, when using the $\beta$ 0.7 solution, the profiling cost is only 0.2\% of overall resource consumption on this solution; when using the $\beta$ 0.2 solution, the profiling cost is 1.5\%.        
+The profiling cost is about 0.2-2\% of the overall video analytics resource consumption. The concrete ratio depends on the concrete AdaConfigure configuration solutions, such as the solutions listed in Table \ref{tab: different sulutions}. For instance, when using the solution of $\beta$=0.7, the profiling cost is only 0.2\% of overall resource consumption on this solution; when using the solution of $\beta$=0.2, the profiling cost is 1.5\%.       
 
+%For instance, the profiling cost is only 0.2\% of overall resource consumption on the solution of 0.7 $\beta$; and the profiling cost is 1.5\% on the solution of 0.2 $\beta$.
 \subsubsection{Different AdaConfigure Solutions to Meet Different Services}
 \label{subsec: different sulutions}
 In the training phase, when using different balance factors $\beta$ in the reward function, we would obtain different agents (different adaptive configuration strategies). 
@@ -227,7 +230,7 @@ In general, the $\beta$ is bigger, indicating the accuracy is more important rel
 			0.7          & 0.26511  &  0.93262            \\
 			\bottomrule
 	\end{tabular}}
-	\caption{Resource consumption and bounding box-based F1 for different AdaConfigure solutions}
+	\caption{Resource consumption and bounding box-based F1 for different AdaConfigure solutions.}
 	\label{tab: different sulutions}
 	%	\vspace{-0.1cm}
 \end{table}

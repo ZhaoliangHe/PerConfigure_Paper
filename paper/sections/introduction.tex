@@ -14,7 +14,7 @@ is shown in Figure~\ref{fig: framework}(b), and we tackle the following design c
 	\begin{minipage}{\linewidth}
 		\centerline{\includegraphics[width=0.9\linewidth]{figures/static_framework.pdf}}
 		\begin{center}
-			{(a) Static configuration solution: fixed configuration for video analytics services}
+			{(a) Static configuration solution: fixed configuration for video analytics services.}
 		\end{center}
 		%        \vspace{0.3cm}
 	\end{minipage}
@@ -24,12 +24,12 @@ is shown in Figure~\ref{fig: framework}(b), and we tackle the following design c
 		\centerline{\includegraphics[width=0.9\linewidth]{figures/auto_framework.pdf}}
 		\vspace{0.2cm}
 		\begin{center}
-			{(b) AdaConfigure solution: reinforcement learning-based adaptive configuration framework}
+			{(b) AdaConfigure solution: reinforcement learning-based adaptive configuration framework.}
 		\end{center}
 	\end{minipage}
 	%\end{tabular}
 	%\vspace{0.1cm}
-	\caption{Comparing to the static solution, our solution can adaptively update the configuration strategy based on the reward feedback}
+	\caption{Comparing to the static solution, our solution can adaptively update the configuration strategy based on the reward feedback.}
 	%	\caption{Comparing to the static solution, our solution can update the configuration strategy based on the object detection model feedback}
 	\label{fig: framework}
 	\vspace{-0.5cm}
@@ -71,7 +71,7 @@ We propose a Deep Q-learning Network-based \cite{DQN} agent to adaptively pick t
 
 We leverage  agent's automatic selection characteristic and the video segmentation strategy to reduce profiling cost. In particular, we divide the video into $T$-second intervals as video chunks and use the agent to choose the best configuration for the first t seconds of the video chunk. It then sticks with the chosen configuration for the rest of the video chunk ($T-t$ seconds) to reduce profiling number. In the evaluation, the profiling cost is about 0.2-2\% of the overall video analytics resource consumption. 
 
-We design a reward function that considers both inference accuracy and computation resources to assess each configuration's impact. Also, to meet different accuracy-demand services, we leverage the balance factor in the reward function to train different agents. Our evaluation experiments on object detection task show that our approach outperforms baseline: it achieves 10-35\% higher accuracy with a similar amount of computation resources or achieves similar accuracy with only 50-90\% of the computation resource.
+We design a reward function that considers both inference accuracy and computation resources to assess each configuration's impact. Also, to meet different accuracy-demand services, we leverage the balance factor in the reward function to train different agents. Our evaluation experiments on object detection task show that our approach outperforms baseline: it achieves 10-35\% higher accuracy with a similar amount of computation resources or achieves similar accuracy with only 10-50\% of the computation resource.
 
 %Our solution can adaptively update configuration strategy over time, and it is adaptive to different location-camera inferences and different accuracy-demand services.
 %\begin{itemize}	

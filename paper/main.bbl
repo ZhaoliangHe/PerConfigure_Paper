@@ -31,13 +31,6 @@ Chien-Chun Hung, Ganesh Ananthanarayanan, Peter Bodik, Leana Golubchik, Minlan
 \newblock ``Videoedge: Processing camera streams using hierarchical clusters,''
 \newblock in {\em SEC}. IEEE, 2018, pp. 115--131.
 
-\bibitem{han2016mcdnn}
-Seungyeop Han, Haichen Shen, Matthai Philipose, Sharad Agarwal, Alec Wolman,
-  and Arvind Krishnamurthy,
-\newblock ``Mcdnn: An approximation-based execution framework for deep stream
-  processing under resource constraints,''
-\newblock in {\em MobiSys}, 2016, pp. 123--136.
-
 \bibitem{hsieh2018focus}
 Kevin Hsieh, Ganesh Ananthanarayanan, Peter Bodik, Shivaram Venkataraman,
   Paramvir Bahl, Matthai Philipose, Phillip~B Gibbons, and Onur Mutlu,
