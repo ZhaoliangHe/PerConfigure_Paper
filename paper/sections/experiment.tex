@@ -1,12 +1,12 @@
 \section{Evaluation}
 \label{Section: experiment}
 
-\subsection{Experiment Setup and Configuration Selection}
+\subsection{Experiment Setup}
 \label{subsec: configuration}
 We carry out real-world experiments on the object detection task (basic computer vision services) to verify our solution’s performance. We use a desktop PC (Intel Xeon E5-2650 v4 CPU) with four NVIDIA 1080ti graphic card as the server infrastructure, and simulate the environment \cite{trade-offs} with three pretrained object detection models in Tensorflow, which are SSD+ResNet152V1, FasterRCNN+ResNet50V1, FasterRCNN+InceptionResNetV2. For each model, two kinds of image resolution, which is $1024\times1024$ and $640\times640$, can be picked up. In our experiment, we set the choices space of fps as \{1, 2, 5, 10, 15, 20, 25, 30\}. We use FFmpeg to switch the frame rate and image resolution, which decide which frames and in what size they should be fed to the object detection model. The configuration space comprises all possible combinations of values of these knobs, so the environment has 48 configurations in total.
 %In the service inference, the processing video module uses CPU resources, and the object detection module uses GPU resources. In our study, we use GPU processing time as the metric of resource consumption because GPU is the dominant resource for most video processing workloads \cite{jiang2018chameleon}.In the evaluation, the processing video module needs 62s to decode 5 mins video into 9000 frames image (i.e., average CPU processing time per frame is about 0.006s), which is lower than the GPU processing time. To reduce the latency of processing video, we use different processes to carry out the processing video module and the object detection module in our experiments.   
 
-\subsection{Dataset and Metric}
+\subsection{Datasets and Metric}
 \label{subsec: datasets}
 Most public sources datasets cannot fully satisfy all configuration choices, they provide only a fraction of the requirements for configuration. %for example, some can only guarantee 30 frames but cannot guarantee 1024p resolution. In contrast, others can ensure resolution but cannot provide a sufficient frame rate. 
 %In recent years, most of the driving recorder can provide enough resolution and frame rate, so 
@@ -107,7 +107,7 @@ In the training procedure, we build up to eight independently identical environm
 \begin{table}[!t]
 	\centering
 	%     \begin{tabular}{llllll}
-	\resizebox{0.4\textwidth}{!}{
+	\resizebox{0.45\textwidth}{!}{
 		\begin{tabular}{cccccc}
 			\toprule
 			Notation          & Value & & & Notation     & Value  \\ \midrule
@@ -204,7 +204,7 @@ As shown in Figure \ref{fig: results}, Adaconfigure achieves a high accuracy of 
 In our solution, the video chunk is passed to the AdaConfigure firstly to estimate the configuration, bringing profiling cost (extra resource consumption) to the whole system. 
 The profiling cost, including the resource of extract $k_1$ embeddings and the cost of agent choosing actions. We test the average time on 30 hours video of Multi-Camera Dataset, and conclude that the average time of extract one embedding is 0.02s, and the average time of agent choosing action is 0.0006s, which can be ignored. We compute the ratio by dividing profiling time into total inference time as metric of profiling cost.
 %, which is equals the frame number multiply the average time per frame. 
-The profiling cost is about 0.2-2\% of the overall video analytics resource consumption. The concrete ratio depends on the concrete AdaConfigure configuration solutions, such as the solutions listed in Table \ref{tab: different sulutions}. For instance, when using the $\beta$ 0.7 solution, the profiling time is only 0.2\% of overall resource consumption on this solution; when using the $\beta$ 0.2 solution, the profiling cost is 1.5\%.        
+The profiling cost is about 0.2-2\% of the overall video analytics resource consumption. The concrete ratio depends on the concrete AdaConfigure configuration solutions, such as the solutions listed in Table \ref{tab: different sulutions}. For instance, when using the $\beta$ 0.7 solution, the profiling cost is only 0.2\% of overall resource consumption on this solution; when using the $\beta$ 0.2 solution, the profiling cost is 1.5\%.        
 
 \subsubsection{Different AdaConfigure Solutions to Meet Different Services}
 \label{subsec: different sulutions}
@@ -215,7 +215,7 @@ In general, the $\beta$ is bigger, indicating the accuracy is more important rel
 \begin{table}[!t]
 	\centering
 	%     \begin{tabular}{lll}
-	\resizebox{0.4\textwidth}{!}{
+	\resizebox{0.45\textwidth}{!}{
 		\begin{tabular}{ccc}
 			\toprule
 			balance factor $\beta$ & Avg GPU time per frame (second) & Avg F1 score  \\ \midrule

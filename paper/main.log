@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2020.10.15)  14 DEC 2020 00:12
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2020.10.15)  14 DEC 2020 14:13
 entering extended mode
 **main.tex
 (E:\GitHub\PerConfigure_Paper\paper\main.tex
@@ -874,21 +874,21 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitdp@description=\count140
 )
 (E:\GitHub\PerConfigure_Paper\paper\main.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 51.
 
 (D:\CTEX\MiKTeX\tex\latex\psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -908,7 +908,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \everyMPtoPDFconversion=\toks37
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring ON on input line 48.
+Package hyperref Info: Link coloring ON on input line 51.
 
 (D:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -918,21 +918,21 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count147
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \nameref on input line 51.
 
 (E:\GitHub\PerConfigure_Paper\paper\main.out)
 (E:\GitHub\PerConfigure_Paper\paper\main.out)
 \@outlinefile=\write4
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
-LaTeX Font Info:    Try loading font information for U+msa on input line 74.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 77.
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 74.
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
 
 (D:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -940,12 +940,48 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 (E:\GitHub\PerConfigure_Paper\paper\sections/abstract.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-)
-(E:\GitHub\PerConfigure_Paper\paper\sections/introduction.tex
 
-pdfTeX warning: pdflatex.exe (file E:/GitHub/PerConfigure_Paper/paper/figures/s
-tatic_framework.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
-on <1.5> allowed
+Underfull \hbox (badness 2197) in paragraph at lines 2--3
+\OT1/ptm/m/n/10 frame rate and im-age res-o-lu-tion for a video an-a-lyt-ic-s
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 2--3
+\OT1/ptm/m/n/10 pipeline, thus de-ter-min-ing the in-fer-ence ac-cu-ra-cy and
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 2--3
+\OT1/ptm/m/n/10 al-l con-fig-u-ra-tions and s-e-lect-ing the one with the best
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 2--3
+\OT1/ptm/m/n/10 or high com-pu-ta-tion cost. To this end, we pro-pose
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 2--3
+\OT1/ptm/m/n/10 the video stream us-ing a seg-men-ta-tion mech-a-nis-m that
+ []
+
+) (E:\GitHub\PerConfigure_Paper\paper\sections/introduction.tex
+Underfull \hbox (badness 2096) in paragraph at lines 9--11
+[]\OT1/ptm/m/n/10 Different con-fig-u-ra-tions di-rect-ly af-fec-t ac-cu-ra-cy 
+and
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 9--11
+\OT1/ptm/m/n/10 sec-ond-s [[]]. As shown in Fig-ure [][]1[][](a), if one us-es
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 9--11
+\OT1/ptm/m/n/10 an ex-pen-sive stat-ic con-fig-u-ra-tion (e.g., on-ly pro-files
+ the
+ []
+
 <figures/static_framework.pdf, id=82, 963.6pt x 115.27065pt>
 File: figures/static_framework.pdf Graphic file (type pdf)
 
@@ -953,85 +989,200 @@ File: figures/static_framework.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/static_framework.pdf used on input line 15.
 (pdftex.def)             Requested size: 455.81004pt x 54.52547pt.
 
-
-pdfTeX warning: pdflatex.exe (file E:/GitHub/PerConfigure_Paper/paper/figures/a
-uto_framework.pdf): PDF inclusion: found PDF version <1.7>, but at most version
- <1.5> allowed
 <figures/auto_framework.pdf, id=83, 963.6pt x 216.20775pt>
 File: figures/auto_framework.pdf Graphic file (type pdf)
 
 <use figures/auto_framework.pdf>
 Package pdftex.def Info: figures/auto_framework.pdf used on input line 24.
 (pdftex.def)             Requested size: 455.81004pt x 102.27086pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 41.
- (D:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
 
-Underfull \hbox (badness 1831) in paragraph at lines 41--45
+Underfull \hbox (badness 5260) in paragraph at lines 38--42
 []\OT1/ptm/m/it/10 Choosing the best con-fig-u-ra-tion is a com-pli-cat-ed
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 38--42
+\OT1/ptm/m/n/10 changes sig-nif-i-cant-ly be-cause the ex-ac-t con-tex-t of the
+
+ []
+
+
+Underfull \hbox (badness 5217) in paragraph at lines 43--45
+[]\OT1/ptm/m/it/10 Adaptive con-fig-u-ra-tion would cause a huge ex-tra
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 43--45
+\OT1/ptm/m/n/10 ex-po-nen-tial-ly, and t-hou-sand-s of con-fig-u-ra-tions can b
+e
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 43--45
+\OT1/ptm/m/n/10 com-bined with just a few knob-s [[]]. So ex-haus-tive
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 43--45
+\OT1/ptm/m/n/10 one so-lu-tion that au-to-mat-i-cal-ly choos-es a con-fig-u-ra-
+tion
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 43--45
+\OT1/ptm/m/n/10 in-stead of man-u-al-ly try-ing us-ing var-i-ous con-fig-u-ra-t
+ions,
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 66--69
+[]\OT1/ptm/m/n/10 In our so-lu-tion, Ada-Con-fig-ure can adap-tive-ly and
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 66--69
+\OT1/ptm/m/n/10 au-to-mat-i-cal-ly s-e-lec-t the best con-fig-u-ra-tion ac-cord
+-ing to
  []
 
 [1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
 
-])
-(E:\GitHub\PerConfigure_Paper\paper\sections/relatedwork.tex)
+]
+Underfull \hbox (badness 1297) in paragraph at lines 72--73
+\OT1/ptm/m/n/10 as video chunks and use the a-gen-t to choose the best
+ []
+
+
+Underfull \hbox (badness 4467) in paragraph at lines 74--75
+[]\OT1/ptm/m/n/10 We de-sign a re-ward func-tion that con-sid-er-s both
+ []
+
+) (E:\GitHub\PerConfigure_Paper\paper\sections/relatedwork.tex
+Underfull \hbox (badness 1436) in paragraph at lines 6--7
+\OT1/ptm/m/it/10 dom-i-nan-t de-mand \OT1/ptm/m/n/10 to i-den-ti-fy the best tr
+ade-of-f be-tween
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 12--13
+\OT1/ptm/m/n/10 Some pa-per-s s-tudy how to dy-nam-i-cal-ly op-ti-mize the
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 12--13
+\OT1/ptm/m/n/10 tem-po-ral and s-pa-tial cor-re-la-tion to de-crease the cost o
+f
+ []
+
+[2 <E:/GitHub/PerConfigure_Paper/paper/figures/static_framework.pdf> <E:/GitHub
+/PerConfigure_Paper/paper/figures/auto_framework.pdf>])
 (E:\GitHub\PerConfigure_Paper\paper\sections/design.tex
 
 pdfTeX warning: pdflatex.exe (file E:/GitHub/PerConfigure_Paper/paper/figures/f
 ramework2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<figures/framework2.pdf, id=107, 935.1738pt x 228.855pt>
+<figures/framework2.pdf, id=224, 935.1738pt x 228.855pt>
 File: figures/framework2.pdf Graphic file (type pdf)
 
 <use figures/framework2.pdf>
 Package pdftex.def Info: figures/framework2.pdf used on input line 6.
 (pdftex.def)             Requested size: 455.81004pt x 111.54628pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1748) in paragraph at lines 13--14
+$\OML/cmm/m/it/10 c$ \OT1/ptm/m/n/10 for one video chunk to in-fer-ence. We dis
+-cuss the
+ []
 
- [2 <E:/GitHub/PerConfigure_Paper/paper/figures/static_framework.pdf> <E:/GitHu
-b/PerConfigure_Paper/paper/figures/auto_framework.pdf>] [3 <E:/GitHub/PerConfig
-ure_Paper/paper/figures/framework2.pdf>]
+
+Underfull \hbox (badness 2495) in paragraph at lines 13--14
+\OT1/ptm/m/n/10 for-mu-la-tion, a-gen-t de-sign, re-in-force-men-t learning-bas
+ed
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 20--21
+[]\OT1/ptm/m/n/10 Initially, the a-gen-t tries d-if-fer-en-t con-fig-u-ra-tions
+ $\OML/cmm/m/it/10 c$ \OT1/ptm/m/n/10 to
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 36--37
+\OT1/ptm/m/n/10 In this work, we use the ear-ly con-vo-lu-tion lay-er-s of
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 36--37
+\OT1/ptm/m/n/10 em-bed-ding $\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 ; []; :::; []
+\OMS/cmsy/m/n/10 g$\OT1/ptm/m/n/10 , and re-cen-t con-fig-u-ra-tion
+ []
+
+[3]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 48.
+
+Underfull \hbox (badness 1062) in paragraph at lines 60--61
+[] []\OT1/ptm/m/n/10 Process video chunk $\OML/cmm/m/it/10 x[]$ \OT1/ptm/m/n/10
+ us-ing con-fig-u-ra-tion $\OML/cmm/m/it/10 c[]$ \OT1/ptm/m/n/10 to
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 [] []\OT1/ptm/m/n/10 Sample a ran-dom-ly mini-batch of tran-si-tion-s
  []
 
-) (E:\GitHub\PerConfigure_Paper\paper\sections/experiment.tex [4]
-<figures/m6.pdf, id=347, 462.52798pt x 346.89601pt>
+) (E:\GitHub\PerConfigure_Paper\paper\sections/experiment.tex
+Underfull \hbox (badness 1275) in paragraph at lines 78--1
+\OT1/ptm/m/n/10 a bal-ance fac-tor $\OML/cmm/m/it/10 $ \OT1/ptm/m/n/10 to for-
+m a lin-ear com-bi-na-tion $\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 =$
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 6.
+(D:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+
+Underfull \hbox (badness 1237) in paragraph at lines 6--8
+\OT1/ptm/m/n/10 serv-er in-fras-truc-ture, and sim-u-late the en-vi-ron-men-t [
+[]]
+ []
+
+
+Underfull \hbox (badness 4859) in paragraph at lines 11--16
+\OT1/ptm/m/n/10 Most pub-lic sources dataset-s can-not ful-ly sat-is-fy al-l
+ []
+
+[4 <E:/GitHub/PerConfigure_Paper/paper/figures/framework2.pdf>]
+<figures/m6.pdf, id=365, 462.52798pt x 346.89601pt>
 File: figures/m6.pdf Graphic file (type pdf)
  <use figures/m6.pdf>
 Package pdftex.def Info: figures/m6.pdf used on input line 66.
 (pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
 
-<figures/m6_label.pdf, id=348, 462.52798pt x 346.89601pt>
+<figures/m6_label.pdf, id=366, 462.52798pt x 346.89601pt>
 File: figures/m6_label.pdf Graphic file (type pdf)
 
 <use figures/m6_label.pdf>
 Package pdftex.def Info: figures/m6_label.pdf used on input line 71.
 (pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
 
-<figures/duke.pdf, id=349, 462.52798pt x 346.89601pt>
+<figures/duke.pdf, id=367, 462.52798pt x 346.89601pt>
 File: figures/duke.pdf Graphic file (type pdf)
  <use figures/duke.pdf>
 Package pdftex.def Info: figures/duke.pdf used on input line 76.
 (pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
 
-<figures/duke_label.pdf, id=350, 462.52798pt x 346.89601pt>
+<figures/duke_label.pdf, id=368, 462.52798pt x 346.89601pt>
 File: figures/duke_label.pdf Graphic file (type pdf)
 
 <use figures/duke_label.pdf>
 Package pdftex.def Info: figures/duke_label.pdf used on input line 82.
 (pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
 
-<figures/_Westbound_Eastbound_Rear.pdf, id=351, 462.52798pt x 346.89601pt>
+<figures/_Westbound_Eastbound_Rear.pdf, id=369, 462.52798pt x 346.89601pt>
 File: figures/_Westbound_Eastbound_Rear.pdf Graphic file (type pdf)
 
 <use figures/_Westbound_Eastbound_Rear.pdf>
@@ -1039,71 +1190,106 @@ Package pdftex.def Info: figures/_Westbound_Eastbound_Rear.pdf used on input li
 ne 87.
 (pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
 
-<figures/_Westbound_Eastbound_Rear_label.pdf, id=352, 462.52798pt x 346.89601pt
+<figures/_Westbound_Eastbound_Rear_label.pdf, id=370, 462.52798pt x 346.89601pt
 >
 File: figures/_Westbound_Eastbound_Rear_label.pdf Graphic file (type pdf)
  <use figures/_Westbound_Eastbound_Rear_label.pdf>
 Package pdftex.def Info: figures/_Westbound_Eastbound_Rear_label.pdf used on in
 put line 93.
 (pdftex.def)             Requested size: 142.26378pt x 106.70032pt.
- [5 <E:/GitHub/PerConfigure_Paper/paper/figures/m6.pdf> <E:/GitHub/PerConfigure
-_Paper/paper/figures/m6_label.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/
-duke.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/duke_label.pdf> <E:/GitHu
-b/PerConfigure_Paper/paper/figures/_Westbound_Eastbound_Rear.pdf> <E:/GitHub/Pe
-rConfigure_Paper/paper/figures/_Westbound_Eastbound_Rear_label.pdf>])
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 204--208
+\OT1/ptm/m/n/10 first-ly to es-ti-mate the con-fig-u-ra-tion, bring-ing pro-fil
+-ing
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 204--208
+\OT1/ptm/m/n/10 cost (ex-tra re-source con-sump-tion) to the w-hole sys-tem.
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 204--208
+\OT1/ptm/m/n/10 The pro-fil-ing cost, in-clud-ing the re-source of ex-trac-t $\
+OML/cmm/m/it/10 k[]$
+ []
+
+[5 <E:/GitHub/PerConfigure_Paper/paper/figures/m6.pdf> <E:/GitHub/PerConfigure_
+Paper/paper/figures/m6_label.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/d
+uke.pdf> <E:/GitHub/PerConfigure_Paper/paper/figures/duke_label.pdf> <E:/GitHub
+/PerConfigure_Paper/paper/figures/_Westbound_Eastbound_Rear.pdf> <E:/GitHub/Per
+Configure_Paper/paper/figures/_Westbound_Eastbound_Rear_label.pdf>])
 (E:\GitHub\PerConfigure_Paper\paper\sections/conclusion.tex)
 (E:\GitHub\PerConfigure_Paper\paper\main.bbl
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 48.
+Underfull \hbox (badness 2409) in paragraph at lines 22--27
+\OT1/ptm/m/n/10 Matthai Phili-pose, Paramvir Bahl, and Michael J
+ []
 
+
+Underfull \hbox (badness 2980) in paragraph at lines 22--27
+\OT1/ptm/m/n/10 Freed-man,  ``Live video an-a-lyt-ic-s at s-cale with
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 35--40
+[]\OT1/ptm/m/n/10 Seungyeop Han, Haichen Shen, Matthai Phili-pose,
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 55.
 (D:\CTEX\MiKTeX\tex\latex\psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 7030) in paragraph at lines 47--49
+Underfull \hbox (badness 7030) in paragraph at lines 54--56
 []\OT1/ptm/m/n/10 FFmpeg,  ``Ffm-peg,'' [][]$\OT1/pcr/m/n/10 http : / / ffmpeg 
 . org/$[][]\OT1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 57--62
+Underfull \hbox (badness 4954) in paragraph at lines 64--69
 \OT1/ptm/m/n/10 by gen-er-a-tive pre-training,''  \OT1/ptm/m/it/10 URL https://
 s3-us-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--62
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
 \OT1/ptm/m/it/10 west-2. a-ma-zon-aws. com/openai-assets/research-
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 57--62
+Underfull \hbox (badness 2846) in paragraph at lines 64--69
 \OT1/ptm/m/it/10 covers/languageunsupervised/language un-der-stand-ing
  []
 
-
-Underfull \hbox (badness 1448) in paragraph at lines 84--89
-[]\OT1/ptm/m/n/10 Mark Ev-er-ing-ham, Luc Van Gool, Christo-pher K-
+[6]
+Underfull \hbox (badness 1448) in paragraph at lines 91--96
+[]\OT1/ptm/m/n/10 Mark Ev-er-ing-ham, Luc Van Gool, Christo-pher K-I
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 91--94
+Underfull \hbox (badness 1253) in paragraph at lines 98--101
 []\OT1/ptm/m/n/10 Daniel Kang, John Em-mon-s, Fi-ras Abuzaid, Pe-ter
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
+ [7
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
  (E:\GitHub\PerConfigure_Paper\paper\main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4BC7E8C3F7EC343EB162981991FBC2C5;1373.
+(rerunfilecheck)             Checksum: 8C7DC574D047F26ED2657FB489F36159;1337.
  ) 
 Here is how much of TeX's memory you used:
- 17718 strings out of 495354
- 338817 string characters out of 3183858
- 448709 words of memory out of 3000000
- 20412 multiletter control sequences out of 15000+200000
+ 17715 strings out of 495354
+ 338775 string characters out of 3183858
+ 447696 words of memory out of 3000000
+ 20407 multiletter control sequences out of 15000+200000
  20796 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,10n,69p,1699b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1119,9 +1305,9 @@ KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/CTEX/MiKTeX/fonts/type1
 /urw/courier/ucrr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><D:/CT
 EX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on main.pdf (6 pages, 848984 bytes).
+Output written on main.pdf (7 pages, 1709918 bytes).
 PDF statistics:
- 716 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
+ 743 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
  202 words of extra memory for PDF output out of 10000 (max. 10000000)
 

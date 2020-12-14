@@ -19,7 +19,7 @@ To adaptively choose different configuration for video stream, we divides the vi
 
 Initially, the agent tries different configurations $ c $ to obtain inference results $\vec{y}_c$ from input video chunk $ x $. To obtain object detection results $ \{\vec{y}_{\rm ref}, \vec{y}_c\} $, the agent uses the choosen configuration $ c $ and the reference configuration $ x_{\rm ref} $. Comparing the two object detection results $ \{\vec{y}_{\rm ref}, \vec{y}_c\} $ and two resource consumptions $ \{\hat{s}_{\rm ref}, \hat{s}_c\} $, the agent computes the resource consumption ratio $ \Delta s = \frac{\hat{s}_c}{\hat{s}_{\rm ref}} $ and accuracy metric $ \mathcal{A}_c $.
 
-\subsection{RL Agent Design and Video's Characteristics Extraction}
+\subsection{RL Agent Design and Video Characteristics Extraction}
 
 The RL agent is expected to give a proper configuration $ c $ for minimizing the resource consumption $ \hat{s}_c $ while keeping the accuracy $ \mathcal{A} $. For the RL agent, the input features are continuous numerical vectors, and the expected output is discrete compression quality level $ c $. Therefore we can use the Deep Q-learning Network \cite{DQN} as the RL agent. But the naive Deep Q-learning Network can not work well in this task because the state space of reinforcement learning is too large if we directly treat video chunk as the input, making the RL agent extremely difficult to converge.  
 
@@ -72,7 +72,7 @@ In the training phase, the RL agent firstly uses a $\epsilon$-greedy method to t
 \end{algorithm}
 \setlength{\floatsep}{0.1cm}
 
-\subsection{Reward Feedback Design}
+\subsection{Reward Feedback}
 \label{subsec: reward}
 
 In our solution, the agent is trained by the reward feedback. In the above formulation, we define resource consumption rate $ \Delta s = \frac{\hat{s}_c}{\hat{s}_{\rm ref}} $ and accuracy metric $ \mathcal{A}_c $ at configuration $ c $. Basically, we want the agent to choose a proper configuration for minimizing the resource consumption while remaining acceptable accuracy. Therefore the overall reward $ r $ should be positively correlated with the accuracy $ \mathcal{A} $ while negatively with the resource consumption ratio $ \Delta s $. We introduce a balance factor $ \beta $ to form a linear combination $ r = \beta \mathcal{A} - (1-\beta) \Delta s  $ as the \emph{reward function} $ R(\Delta s, \mathcal{A}) $ so that the configuration achieves good accuracy and resource consumption tradeoff. %% \\
